@@ -1,0 +1,5 @@
+// inputs: -376
+// output: -376
+def unit main(int x) {
+  output x;
+}

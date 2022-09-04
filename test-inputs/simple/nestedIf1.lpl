@@ -1,0 +1,35 @@
+// output: 0000
+def unit main() {
+  if (2 < 3) 
+  {
+    output 0;
+    if (6 == 7) 
+    {
+      output 1;
+    }
+    else
+    {
+      output 0;
+      if (false) 
+      {
+        output 1;
+      }
+      else
+      {
+        output 0;
+        if (true) 
+        {
+          output 0;
+        }
+        else
+        {
+          output 1;
+        }
+      }
+    }
+  }
+  else
+  {
+    output 1;
+  }
+}

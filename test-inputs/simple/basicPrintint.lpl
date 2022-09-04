@@ -1,0 +1,36 @@
+// output: 1000999998
+def unit main() {
+  int z;
+  int x;
+  int pot;
+  int y;
+  z = 1000;
+  while (997 < z) 
+  {
+    x = z;
+    if (x < 0) 
+    {
+      outchar 45;
+      x = 0 - x;
+    }
+    else
+    {
+    }
+    pot = 1;
+    {
+      y = x;
+      while (9 < y) 
+      {
+        pot = pot * 10;
+        y = y / 10;
+      }
+    }
+    while (0 < pot) 
+    {
+      outchar 48 + (x / pot);
+      x = x - ((x / pot) * pot);
+      pot = pot / 10;
+    }
+    z = z - 1;
+  }
+}

@@ -1,0 +1,6 @@
+// output: 5
+def unit main() {
+  int[] a;
+  a = new int[(new bool[(new int[][3].length) + 1].length) + 1];
+  output a.length;
+}

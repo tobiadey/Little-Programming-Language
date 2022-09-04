@@ -1,0 +1,8 @@
+// output: 113
+def unit loopNever() {
+  while (false) 
+  {
+    output 3;
+  }
+  output 113;
+}

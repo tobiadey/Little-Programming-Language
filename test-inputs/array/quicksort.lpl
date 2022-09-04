@@ -1,0 +1,66 @@
+// output: 3 5 7 9 88\s
+def unit main() {
+  int[] a;
+  int i;
+  a = new int[5];
+  a[0] = 9;
+  a[1] = 88;
+  a[2] = 3;
+  a[3] = 7;
+  a[4] = 5;
+  sort(a);
+  i = 0;
+  while (i < (a.length)) 
+  {
+    output a[i];
+    outchar 32;
+    i = i + 1;
+  }
+}
+
+def unit sort(int[] a) {
+  quicksort(a, 0, (a.length) - 1);
+}
+
+def unit quicksort(int[] a, int lo, int hi) {
+  int p;
+  if (lo < hi) 
+  {
+    p = partition(a, lo, hi);
+    quicksort(a, lo, p - 1);
+    quicksort(a, p + 1, hi);
+  }
+  else
+  {
+  }
+}
+
+def int partition(int[] a, int lo, int hi) {
+  int pivot;
+  int i;
+  int j;
+  pivot = a[hi];
+  i = lo;
+  j = lo;
+  while (j < hi) 
+  {
+    if ((a[j]) < (pivot + 1)) 
+    {
+      swap(a, i, j);
+      i = i + 1;
+    }
+    else
+    {
+    }
+    j = j + 1;
+  }
+  swap(a, i, hi);
+  return i;
+}
+
+def unit swap(int[] a, int i, int j) {
+  int x;
+  x = a[i];
+  a[i] = a[j];
+  a[j] = x;
+}

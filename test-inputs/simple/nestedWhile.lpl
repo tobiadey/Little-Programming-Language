@@ -1,0 +1,19 @@
+// output: 8
+def unit mumble() {
+  int x;
+  int i;
+  int j;
+  x = 1;
+  i = 0;
+  while (i < 3) 
+  {
+    j = i;
+    while (j < 3) 
+    {
+      x = x + (i * j);
+      j = j + 1;
+    }
+    i = i + 1;
+  }
+  output x;
+}

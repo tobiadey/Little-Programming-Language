@@ -1,0 +1,15 @@
+// output: 536
+def unit main() {
+  int[] a;
+  int sum;
+  int i;
+  a = new int[3];
+  sum = 536;
+  i = 0;
+  while (i < (a.length)) 
+  {
+    sum = sum + (a[i]);
+    i = i + 1;
+  }
+  output sum;
+}

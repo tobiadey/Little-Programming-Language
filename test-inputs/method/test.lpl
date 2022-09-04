@@ -1,0 +1,8 @@
+def bool foo(int x, int y, int z) {
+   bool b;
+   if (x < y)
+     b = y==z;
+   else
+     b = x==y;
+   return b;
+}

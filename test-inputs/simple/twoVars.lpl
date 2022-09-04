@@ -1,0 +1,8 @@
+// output: 876
+def unit main() {
+  int x;
+  int y;
+  x = 800;
+  y = 76;
+  output x + y;
+}

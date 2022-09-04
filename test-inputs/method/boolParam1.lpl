@@ -1,0 +1,15 @@
+// inputs: 1
+// output: 123
+
+def unit main(bool b) {
+
+
+  if (b)
+  {
+    output 123;
+  }
+  else
+  {
+    output 567;
+  }
+}

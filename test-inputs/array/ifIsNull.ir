@@ -1,0 +1,19 @@
+   EXP(CALL(NAME main))
+   JUMP(NAME _END)
+LABEL main
+   PROLOGUE(0,1)
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -1)), ESEQ(SEQ(MOVE(TEMP arr@2, CALL(NAME _malloc, BINOP(CONST 1, ADD, CONST 1))),
+                                                     MOVE(MEM(TEMP arr@2), CONST 1)
+                                                    ),
+                                                 TEMP arr@2
+                                                ))
+   CJUMP(CONST 1, EQ, CONST 1, @4, @5)
+LABEL @4
+   EXP(CALL(NAME _printint, CONST 99))
+   JUMP(NAME @6)
+LABEL @5
+   EXP(CALL(NAME _printint, CONST 77))
+LABEL @6
+   MOVE(TEMP RV, CONST 0)
+LABEL main@1
+   EPILOGUE(0,1)

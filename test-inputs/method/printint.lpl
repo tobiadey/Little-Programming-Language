@@ -1,0 +1,33 @@
+// inputs: 876
+// output: 876
+def unit main(int x) {
+  printint(x);
+}
+
+def unit printint(int x) {
+  int y;
+  int pot;
+  if (x < 0) 
+  {
+    outchar 45;
+    x = 0 - x;
+  }
+  else
+  {
+  }
+  pot = 1;
+  {
+    y = x;
+    while (9 < y) 
+    {
+      pot = pot * 10;
+      y = y / 10;
+    }
+  }
+  while (0 < pot) 
+  {
+    outchar 48 + (x / pot);
+    x = x - ((x / pot) * pot);
+    pot = pot / 10;
+  }
+}

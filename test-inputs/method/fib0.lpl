@@ -1,0 +1,22 @@
+// inputs: 0
+// output: 0
+def unit main(int x) {
+  output fib(x);
+}
+
+def int fib(int x) {
+  int result;
+  int r1;
+  int r2;
+  if (x < 2) 
+  {
+    result = x;
+  }
+  else
+  {
+    r1 = fib(x - 1);
+    r2 = fib(x - 2);
+    result = r1 + r2;
+  }
+  return result;
+}

@@ -1,0 +1,13 @@
+// output: 123
+def unit main() {
+  bool b;
+  b = true;
+  if (b) 
+  {
+    output 123;
+  }
+  else
+  {
+    output 567;
+  }
+}

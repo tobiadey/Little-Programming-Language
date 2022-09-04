@@ -1,0 +1,9 @@
+// output: 99
+def unit main() {
+  bool[][] a;
+  a = new bool[][1];
+  if (isnull (a[0]))
+    output 99;
+  else
+    output 77;
+}

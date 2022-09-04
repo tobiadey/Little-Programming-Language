@@ -1,0 +1,6 @@
+// output: 777
+def unit main() {
+  int goggle;
+  goggle = 777;
+  output goggle;
+}

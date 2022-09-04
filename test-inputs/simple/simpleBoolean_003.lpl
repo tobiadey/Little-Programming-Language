@@ -1,0 +1,11 @@
+// output: 0
+def unit main() {
+  if (!true) 
+  {
+    output 1;
+  }
+  else
+  {
+    output 0;
+  }
+}

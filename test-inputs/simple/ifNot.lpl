@@ -1,0 +1,11 @@
+// output: -1
+def unit main() {
+  int x;
+  bool nonNegative;
+  x = 0 - 9;
+  nonNegative = 0 < x;
+  if (!nonNegative) 
+    output 0 - 1;
+  else
+    output 1;
+}

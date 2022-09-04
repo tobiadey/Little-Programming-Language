@@ -1,0 +1,30 @@
+   EXP(CALL(NAME main))
+   JUMP(NAME _END)
+LABEL main
+   PROLOGUE(0,1)
+   CJUMP(TEMP @2, EQ, CONST 1, @7, @8)
+LABEL @7
+   EXP(CALL(NAME _printint, CONST 1))
+   JUMP(NAME @9)
+LABEL @8
+   EXP(CALL(NAME _printint, CONST 0))
+LABEL @9
+   MOVE(TEMP RV, CONST 0)
+LABEL main@1
+   EPILOGUE(0,1)
+LABEL sideEffectTrue
+   PROLOGUE(0,0)
+   EXP(CALL(NAME _printint, CONST 99))
+   EXP(CALL(NAME _printchar, CONST 32))
+   MOVE(TEMP RV, CONST 1)
+   JUMP(NAME sideEffectTrue@10)
+   MOVE(TEMP RV, CONST 0)
+LABEL sideEffectTrue@10
+   EPILOGUE(0,0)
+LABEL noSideEffectFalse
+   PROLOGUE(0,0)
+   MOVE(TEMP RV, CONST 0)
+   JUMP(NAME noSideEffectFalse@11)
+   MOVE(TEMP RV, CONST 0)
+LABEL noSideEffectFalse@11
+   EPILOGUE(0,0)

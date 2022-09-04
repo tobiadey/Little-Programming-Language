@@ -1,0 +1,207 @@
+.data
+
+.text
+    0:              LOADI   $RA, main
+    6:              JMPAL   $RA
+    8:              JMPI    _END
+   13:        main: DEC     $SP
+   15:              STORE   $RET, ($SP)
+   18:              DEC     $SP
+   20:              STORE   $FP, ($SP)
+   23:              MOVE    $FP, $SP
+   26:              LOADI   $RA, 4
+   32:              SUB     $SP, $SP, $RA
+   36:              DEC     $SP
+   38:              STORE   $GP1, ($SP)
+   41:              DEC     $SP
+   43:              STORE   $GP2, ($SP)
+   46:              DEC     $SP
+   48:              STORE   $GP3, ($SP)
+   51:              DEC     $SP
+   53:              STORE   $GP4, ($SP)
+   56:              LOADI   $RB, -1
+   62:              ADD     $GP1, $FP, $RB
+   66:              LOADI   $RB, 1000
+   72:              STORE   $RB, ($GP1)
+   75:          @5: LOADI   $RB, -1
+   81:              ADD     $GP1, $FP, $RB
+   85:              MOVE    $RA, $GP1
+   88:              LOAD    $GP1, ($RA)
+   91:              LOADI   $RA, 997
+   97:              LT      $GP1, $RA, $GP1
+  101:              LOADI   $RB, 1
+  107:              EQ      $RA, $GP1, $RB
+  111:              CJMPI   $RA, @4
+  117:          @3: LOADI   $RB, -2
+  123:              ADD     $GP1, $FP, $RB
+  127:              LOADI   $RB, -1
+  133:              ADD     $GP2, $FP, $RB
+  137:              MOVE    $RA, $GP2
+  140:              LOAD    $GP2, ($RA)
+  143:              STORE   $GP2, ($GP1)
+  146:              LOADI   $RB, -2
+  152:              ADD     $GP1, $FP, $RB
+  156:              MOVE    $RA, $GP1
+  159:              LOAD    $GP1, ($RA)
+  162:              LOADI   $RB, 0
+  168:              LT      $GP1, $GP1, $RB
+  172:              LOADI   $RB, 1
+  178:              EQ      $RA, $GP1, $RB
+  182:              CJMPI   $RA, @8
+  188:          @7: LOADI   $RA, 45
+  194:              DEC     $SP
+  196:              STORE   $RA, ($SP)
+  199:              LOADI   $RA, _printchar
+  205:              JMPAL   $RA
+  207:              LOADI   $RB, -2
+  213:              ADD     $GP1, $FP, $RB
+  217:              LOADI   $RB, -2
+  223:              ADD     $GP2, $FP, $RB
+  227:              MOVE    $RA, $GP2
+  230:              LOAD    $GP2, ($RA)
+  233:              LOADI   $RA, 0
+  239:              SUB     $GP2, $RA, $GP2
+  243:              STORE   $GP2, ($GP1)
+  246:              JMPI    @9
+  251:          @8: 
+  251:          @9: LOADI   $RB, -3
+  257:              ADD     $GP1, $FP, $RB
+  261:              LOADI   $RB, 1
+  267:              STORE   $RB, ($GP1)
+  270:              LOADI   $RB, -4
+  276:              ADD     $GP1, $FP, $RB
+  280:              LOADI   $RB, -2
+  286:              ADD     $GP2, $FP, $RB
+  290:              MOVE    $RA, $GP2
+  293:              LOAD    $GP2, ($RA)
+  296:              STORE   $GP2, ($GP1)
+  299:         @14: LOADI   $RB, -4
+  305:              ADD     $GP1, $FP, $RB
+  309:              MOVE    $RA, $GP1
+  312:              LOAD    $GP1, ($RA)
+  315:              LOADI   $RA, 9
+  321:              LT      $GP1, $RA, $GP1
+  325:              LOADI   $RB, 1
+  331:              EQ      $RA, $GP1, $RB
+  335:              CJMPI   $RA, @13
+  341:         @12: LOADI   $RB, -3
+  347:              ADD     $GP1, $FP, $RB
+  351:              LOADI   $RB, -3
+  357:              ADD     $GP2, $FP, $RB
+  361:              MOVE    $RA, $GP2
+  364:              LOAD    $GP2, ($RA)
+  367:              LOADI   $RB, 10
+  373:              MUL     $GP2, $GP2, $RB
+  377:              STORE   $GP2, ($GP1)
+  380:              LOADI   $RB, -4
+  386:              ADD     $GP1, $FP, $RB
+  390:              LOADI   $RB, -4
+  396:              ADD     $GP2, $FP, $RB
+  400:              MOVE    $RA, $GP2
+  403:              LOAD    $GP2, ($RA)
+  406:              LOADI   $RB, 10
+  412:              DIV     $GP2, $GP2, $RB
+  416:              STORE   $GP2, ($GP1)
+  419:              JMPI    @14
+  424:         @13: 
+  424:         @20: LOADI   $RB, -3
+  430:              ADD     $GP1, $FP, $RB
+  434:              MOVE    $RA, $GP1
+  437:              LOAD    $GP1, ($RA)
+  440:              LOADI   $RA, 0
+  446:              LT      $GP1, $RA, $GP1
+  450:              LOADI   $RB, 1
+  456:              EQ      $RA, $GP1, $RB
+  460:              CJMPI   $RA, @19
+  466:         @18: LOADI   $RB, -2
+  472:              ADD     $GP1, $FP, $RB
+  476:              MOVE    $RA, $GP1
+  479:              LOAD    $GP1, ($RA)
+  482:              LOADI   $RB, -3
+  488:              ADD     $GP2, $FP, $RB
+  492:              MOVE    $RA, $GP2
+  495:              LOAD    $GP2, ($RA)
+  498:              DIV     $GP1, $GP1, $GP2
+  502:              LOADI   $RA, 48
+  508:              ADD     $GP1, $RA, $GP1
+  512:              DEC     $SP
+  514:              STORE   $GP1, ($SP)
+  517:              LOADI   $RA, _printchar
+  523:              JMPAL   $RA
+  525:              LOADI   $RB, -2
+  531:              ADD     $GP1, $FP, $RB
+  535:              LOADI   $RB, -2
+  541:              ADD     $GP2, $FP, $RB
+  545:              MOVE    $RA, $GP2
+  548:              LOAD    $GP2, ($RA)
+  551:              LOADI   $RB, -2
+  557:              ADD     $GP3, $FP, $RB
+  561:              MOVE    $RA, $GP3
+  564:              LOAD    $GP3, ($RA)
+  567:              LOADI   $RB, -3
+  573:              ADD     $GP4, $FP, $RB
+  577:              MOVE    $RA, $GP4
+  580:              LOAD    $GP4, ($RA)
+  583:              DIV     $GP3, $GP3, $GP4
+  587:              LOADI   $RB, -3
+  593:              ADD     $GP4, $FP, $RB
+  597:              MOVE    $RA, $GP4
+  600:              LOAD    $GP4, ($RA)
+  603:              MUL     $GP3, $GP3, $GP4
+  607:              SUB     $GP2, $GP2, $GP3
+  611:              STORE   $GP2, ($GP1)
+  614:              LOADI   $RB, -3
+  620:              ADD     $GP1, $FP, $RB
+  624:              LOADI   $RB, -3
+  630:              ADD     $GP2, $FP, $RB
+  634:              MOVE    $RA, $GP2
+  637:              LOAD    $GP2, ($RA)
+  640:              LOADI   $RB, 10
+  646:              DIV     $GP2, $GP2, $RB
+  650:              STORE   $GP2, ($GP1)
+  653:              JMPI    @20
+  658:         @19: LOADI   $RB, -1
+  664:              ADD     $GP1, $FP, $RB
+  668:              LOADI   $RB, -1
+  674:              ADD     $GP2, $FP, $RB
+  678:              MOVE    $RA, $GP2
+  681:              LOAD    $GP2, ($RA)
+  684:              LOADI   $RB, 1
+  690:              SUB     $GP2, $GP2, $RB
+  694:              STORE   $GP2, ($GP1)
+  697:              JMPI    @5
+  702:          @4: LOADI   $RV, 0
+  708:      main@1: LOAD    $GP4, ($SP)
+  711:              INC     $SP
+  713:              LOAD    $GP3, ($SP)
+  716:              INC     $SP
+  718:              LOAD    $GP2, ($SP)
+  721:              INC     $SP
+  723:              LOAD    $GP1, ($SP)
+  726:              INC     $SP
+  728:              MOVE    $RA, $FP
+  731:              INC     $RA
+  733:              LOAD    $RET, ($RA)
+  736:              LOAD    $FP, ($FP)
+  739:              LOADI   $RA, 6
+  745:              ADD     $SP, $SP, $RA
+  749:              JMP     $RET
+  751:              LOADI   $RA, 0
+  757:              SYSCALL 0
+  759:  _printchar: DEC     $SP
+  761:              STORE   $RET, ($SP)
+  764:              DEC     $SP
+  766:              STORE   $FP, ($SP)
+  769:              MOVE    $FP, $SP
+  772:              LOADI   $RA, 2
+  778:              ADD     $RA, $FP, $RA
+  782:              LOAD    $RA, ($RA)
+  785:              SYSCALL 2
+  787:              MOVE    $RA, $FP
+  790:              INC     $RA
+  792:              LOAD    $RET, ($RA)
+  795:              LOAD    $FP, ($FP)
+  798:              LOADI   $RA, 3
+  804:              ADD     $SP, $SP, $RA
+  808:              JMP     $RET
+  810:        _END: 

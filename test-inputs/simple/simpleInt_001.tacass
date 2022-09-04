@@ -1,0 +1,43 @@
+.data
+
+.text
+    0:             LOADI   $RA, main
+    6:             JMPAL   $RA
+    8:             JMPI    _END
+   13:       main: DEC     $SP
+   15:             STORE   $RET, ($SP)
+   18:             DEC     $SP
+   20:             STORE   $FP, ($SP)
+   23:             MOVE    $FP, $SP
+   26:             LOADI   $RA, 0
+   32:             DEC     $SP
+   34:             STORE   $RA, ($SP)
+   37:             LOADI   $RA, _printint
+   43:             JMPAL   $RA
+   45:             LOADI   $RV, 0
+   51:     main@1: MOVE    $RA, $FP
+   54:             INC     $RA
+   56:             LOAD    $RET, ($RA)
+   59:             LOAD    $FP, ($FP)
+   62:             LOADI   $RA, 2
+   68:             ADD     $SP, $SP, $RA
+   72:             JMP     $RET
+   74:             LOADI   $RA, 0
+   80:             SYSCALL 0
+   82:  _printint: DEC     $SP
+   84:             STORE   $RET, ($SP)
+   87:             DEC     $SP
+   89:             STORE   $FP, ($SP)
+   92:             MOVE    $FP, $SP
+   95:             LOADI   $RA, 2
+  101:             ADD     $RA, $RA, $FP
+  105:             LOAD    $RA, ($RA)
+  108:             SYSCALL 5
+  110:             MOVE    $RA, $FP
+  113:             INC     $RA
+  115:             LOAD    $RET, ($RA)
+  118:             LOAD    $FP, ($FP)
+  121:             LOADI   $RA, 3
+  127:             ADD     $SP, $SP, $RA
+  131:             JMP     $RET
+  133:       _END: 

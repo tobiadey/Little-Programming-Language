@@ -1,0 +1,37 @@
+   EXP(CALL(NAME main))
+   JUMP(NAME _END)
+LABEL main
+   PROLOGUE(0,1)
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -1)), ESEQ(SEQ(MOVE(TEMP arr@8, CALL(NAME _malloc, BINOP(BINOP(MEM(ESEQ(SEQ(MOVE(TEMP arr@5, CALL(NAME _malloc, BINOP(BINOP(MEM(ESEQ(SEQ(MOVE(TEMP arr@2, CALL(NAME _malloc, BINOP(CONST 3, ADD, CONST 1))),
+                                                                                                                                                                               MOVE(MEM(TEMP arr@2), CONST 3)
+                                                                                                                                                                              ),
+                                                                                                                                                                           TEMP arr@2
+                                                                                                                                                                          )), ADD, CONST 1), ADD, CONST 1))),
+                                                                                                                  MOVE(MEM(TEMP arr@5), BINOP(MEM(ESEQ(SEQ(MOVE(TEMP arr@2, CALL(NAME _malloc, BINOP(CONST 3, ADD, CONST 1))),
+                                                                                                                                                           MOVE(MEM(TEMP arr@2), CONST 3)
+                                                                                                                                                          ),
+                                                                                                                                                       TEMP arr@2
+                                                                                                                                                      )), ADD, CONST 1))
+                                                                                                                 ),
+                                                                                                              TEMP arr@5
+                                                                                                             )), ADD, CONST 1), ADD, CONST 1))),
+                                                     MOVE(MEM(TEMP arr@8), BINOP(MEM(ESEQ(SEQ(MOVE(TEMP arr@5, CALL(NAME _malloc, BINOP(BINOP(MEM(ESEQ(SEQ(MOVE(TEMP arr@2, CALL(NAME _malloc, BINOP(CONST 3, ADD, CONST 1))),
+                                                                                                                                                           MOVE(MEM(TEMP arr@2), CONST 3)
+                                                                                                                                                          ),
+                                                                                                                                                       TEMP arr@2
+                                                                                                                                                      )), ADD, CONST 1), ADD, CONST 1))),
+                                                                                              MOVE(MEM(TEMP arr@5), BINOP(MEM(ESEQ(SEQ(MOVE(TEMP arr@2, CALL(NAME _malloc, BINOP(CONST 3, ADD, CONST 1))),
+                                                                                                                                       MOVE(MEM(TEMP arr@2), CONST 3)
+                                                                                                                                      ),
+                                                                                                                                   TEMP arr@2
+                                                                                                                                  )), ADD, CONST 1))
+                                                                                             ),
+                                                                                          TEMP arr@5
+                                                                                         )), ADD, CONST 1))
+                                                    ),
+                                                 TEMP arr@8
+                                                ))
+   EXP(CALL(NAME _printint, MEM(MEM(BINOP(TEMP FP, ADD, CONST -1)))))
+   MOVE(TEMP RV, CONST 0)
+LABEL main@1
+   EPILOGUE(0,1)

@@ -1,0 +1,12 @@
+   EXP(CALL(NAME main))
+   JUMP(NAME _END)
+LABEL main
+   PROLOGUE(0,0)
+   EXP(CALL(NAME _printchar, CONST 72))
+   EXP(CALL(NAME _printchar, CONST 101))
+   EXP(CALL(NAME _printchar, CONST 108))
+   EXP(CALL(NAME _printchar, CONST 108))
+   EXP(CALL(NAME _printchar, CONST 111))
+   MOVE(TEMP RV, CONST 0)
+LABEL main@1
+   EPILOGUE(0,0)

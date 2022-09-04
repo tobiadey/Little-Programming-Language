@@ -1,0 +1,22 @@
+   EXP(CALL(NAME main))
+   JUMP(NAME _END)
+LABEL main
+   PROLOGUE(0,3)
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -1)), ESEQ(SEQ(MOVE(TEMP arr@2, CALL(NAME _malloc, BINOP(CONST 3, ADD, CONST 1))),
+                                                     MOVE(MEM(TEMP arr@2), CONST 3)
+                                                    ),
+                                                 TEMP arr@2
+                                                ))
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -2)), CONST 536)
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -3)), CONST 0)
+LABEL @7
+   CJUMP(BINOP(MEM(BINOP(TEMP FP, ADD, CONST -3)), LT, MEM(MEM(BINOP(TEMP FP, ADD, CONST -1)))), EQ, CONST 1, @5, @6)
+LABEL @5
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -2)), BINOP(MEM(BINOP(TEMP FP, ADD, CONST -2)), ADD, MEM(BINOP(MEM(BINOP(TEMP FP, ADD, CONST -1)), ADD, BINOP(MEM(BINOP(TEMP FP, ADD, CONST -3)), ADD, CONST 1)))))
+   MOVE(MEM(BINOP(TEMP FP, ADD, CONST -3)), BINOP(MEM(BINOP(TEMP FP, ADD, CONST -3)), ADD, CONST 1))
+   JUMP(NAME @7)
+LABEL @6
+   EXP(CALL(NAME _printint, MEM(BINOP(TEMP FP, ADD, CONST -2))))
+   MOVE(TEMP RV, CONST 0)
+LABEL main@1
+   EPILOGUE(0,3)

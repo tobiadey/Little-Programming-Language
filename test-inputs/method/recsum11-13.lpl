@@ -1,0 +1,23 @@
+// inputs: 11 -13
+// output: -2
+def unit main(int x, int y) {
+  output recsum(x, y);
+}
+
+def int recsum(int x, int y) {
+  if (x < 0) 
+  {
+    y = recsum(x + 1, y - 1);
+  }
+  else
+  {
+    if (0 < x) 
+    {
+      y = recsum(x - 1, y + 1);
+    }
+    else
+    {
+    }
+  }
+  return y;
+}

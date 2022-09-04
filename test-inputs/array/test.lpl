@@ -1,0 +1,11 @@
+// output: 99
+def unit main() {
+bool[][][][][][] a;
+  a = true;
+a = false;
+a = b;
+a = !true;
+a = isnull20;
+a = (20);
+a = new int[20];
+}

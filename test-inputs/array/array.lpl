@@ -1,0 +1,15 @@
+// output: 92 93
+def unit main() {
+  int[] a1;
+  int[] a2;
+  a1 = new int[3];
+  a2 = new int[2];
+  a1[0] = 90;
+  a1[1] = 91;
+  a1[2] = 92;
+  a2[0] = 93;
+  a2[1] = 94;
+  output a1[2];
+  outchar 32;
+  output a2[0];
+}

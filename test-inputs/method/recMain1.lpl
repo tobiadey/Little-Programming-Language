@@ -1,0 +1,14 @@
+//inputs: 1
+//output: 779999
+def unit main(int x) {
+  if (x == 0) 
+    output 99;
+  else
+    foo();
+}
+
+def unit foo() {
+  output 77;
+  main(0);
+  main(0);
+}

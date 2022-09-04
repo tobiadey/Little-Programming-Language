@@ -1,0 +1,23 @@
+// inputs: 9
+// output: 91089786756453423120
+def unit ping(int x) {
+  output x;
+  if (0 < x) 
+  {
+    pong(x + 1);
+  }
+  else
+  {
+  }
+}
+
+def unit pong(int x) {
+  output x;
+  if (0 < x) 
+  {
+    ping(x - 2);
+  }
+  else
+  {
+  }
+}

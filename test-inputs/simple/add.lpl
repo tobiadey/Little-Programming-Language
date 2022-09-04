@@ -1,0 +1,4 @@
+// output: 5
+def unit main() {
+  output 2+3;
+}

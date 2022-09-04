@@ -1,0 +1,22 @@
+// output: 77 0
+def unit main() {
+  bool b;
+  if ((noSideEffectTrue()) && (sideEffectFalse())) 
+  {
+    output 1;
+  }
+  else
+  {
+    output 0;
+  }
+}
+
+def bool noSideEffectTrue() {
+  return true;
+}
+
+def bool sideEffectFalse() {
+  output 77;
+  outchar 32;
+  return false;
+}

@@ -1,0 +1,15 @@
+// output: 128
+def unit main() {
+  int x;
+  int y;
+  int z;
+  x = 7;
+  y = 2;
+  z = 1;
+  while (0 < x) 
+  {
+    z = z * y;
+    x = x - 1;
+  }
+  output z;
+}

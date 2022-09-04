@@ -1,0 +1,14 @@
+   EXP(CALL(NAME main))
+   JUMP(NAME _END)
+LABEL main
+   PROLOGUE(0,0)
+   CJUMP(CONST 0, EQ, CONST 1, @2, @3)
+LABEL @2
+   EXP(CALL(NAME _printint, CONST 1))
+   JUMP(NAME @4)
+LABEL @3
+   EXP(CALL(NAME _printint, CONST 0))
+LABEL @4
+   MOVE(TEMP RV, CONST 0)
+LABEL main@1
+   EPILOGUE(0,0)

@@ -1,0 +1,371 @@
+.data
+
+.text
+    0:             LOADI   $RA, main
+    6:             JMPAL   $RA
+    8:             JMPI    _END
+   13:       main: DEC     $SP
+   15:             STORE   $RET, ($SP)
+   18:             DEC     $SP
+   20:             STORE   $FP, ($SP)
+   23:             MOVE    $FP, $SP
+   26:             LOADI   $RA, 102
+   32:             DEC     $SP
+   34:             STORE   $RA, ($SP)
+   37:             LOADI   $RA, 101
+   43:             DEC     $SP
+   45:             STORE   $RA, ($SP)
+   48:             LOADI   $RA, 100
+   54:             DEC     $SP
+   56:             STORE   $RA, ($SP)
+   59:             LOADI   $RA, 99
+   65:             DEC     $SP
+   67:             STORE   $RA, ($SP)
+   70:             LOADI   $RA, 98
+   76:             DEC     $SP
+   78:             STORE   $RA, ($SP)
+   81:             LOADI   $RA, 97
+   87:             DEC     $SP
+   89:             STORE   $RA, ($SP)
+   92:             LOADI   $RA, 96
+   98:             DEC     $SP
+  100:             STORE   $RA, ($SP)
+  103:             LOADI   $RA, 95
+  109:             DEC     $SP
+  111:             STORE   $RA, ($SP)
+  114:             LOADI   $RA, 94
+  120:             DEC     $SP
+  122:             STORE   $RA, ($SP)
+  125:             LOADI   $RA, 93
+  131:             DEC     $SP
+  133:             STORE   $RA, ($SP)
+  136:             LOADI   $RA, 92
+  142:             DEC     $SP
+  144:             STORE   $RA, ($SP)
+  147:             LOADI   $RA, 91
+  153:             DEC     $SP
+  155:             STORE   $RA, ($SP)
+  158:             LOADI   $RA, 90
+  164:             DEC     $SP
+  166:             STORE   $RA, ($SP)
+  169:             LOADI   $RA, 89
+  175:             DEC     $SP
+  177:             STORE   $RA, ($SP)
+  180:             LOADI   $RA, 88
+  186:             DEC     $SP
+  188:             STORE   $RA, ($SP)
+  191:             LOADI   $RA, 87
+  197:             DEC     $SP
+  199:             STORE   $RA, ($SP)
+  202:             LOADI   $RA, 86
+  208:             DEC     $SP
+  210:             STORE   $RA, ($SP)
+  213:             LOADI   $RA, 85
+  219:             DEC     $SP
+  221:             STORE   $RA, ($SP)
+  224:             LOADI   $RA, 84
+  230:             DEC     $SP
+  232:             STORE   $RA, ($SP)
+  235:             LOADI   $RA, 83
+  241:             DEC     $SP
+  243:             STORE   $RA, ($SP)
+  246:             LOADI   $RA, 82
+  252:             DEC     $SP
+  254:             STORE   $RA, ($SP)
+  257:             LOADI   $RA, 81
+  263:             DEC     $SP
+  265:             STORE   $RA, ($SP)
+  268:             LOADI   $RA, 80
+  274:             DEC     $SP
+  276:             STORE   $RA, ($SP)
+  279:             LOADI   $RA, 79
+  285:             DEC     $SP
+  287:             STORE   $RA, ($SP)
+  290:             LOADI   $RA, 78
+  296:             DEC     $SP
+  298:             STORE   $RA, ($SP)
+  301:             LOADI   $RA, 77
+  307:             DEC     $SP
+  309:             STORE   $RA, ($SP)
+  312:             LOADI   $RA, 76
+  318:             DEC     $SP
+  320:             STORE   $RA, ($SP)
+  323:             LOADI   $RA, 75
+  329:             DEC     $SP
+  331:             STORE   $RA, ($SP)
+  334:             LOADI   $RA, 74
+  340:             DEC     $SP
+  342:             STORE   $RA, ($SP)
+  345:             LOADI   $RA, 73
+  351:             DEC     $SP
+  353:             STORE   $RA, ($SP)
+  356:             LOADI   $RA, 72
+  362:             DEC     $SP
+  364:             STORE   $RA, ($SP)
+  367:             LOADI   $RA, 71
+  373:             DEC     $SP
+  375:             STORE   $RA, ($SP)
+  378:             LOADI   $RA, 70
+  384:             DEC     $SP
+  386:             STORE   $RA, ($SP)
+  389:             LOADI   $RA, 69
+  395:             DEC     $SP
+  397:             STORE   $RA, ($SP)
+  400:             LOADI   $RA, 68
+  406:             DEC     $SP
+  408:             STORE   $RA, ($SP)
+  411:             LOADI   $RA, 67
+  417:             DEC     $SP
+  419:             STORE   $RA, ($SP)
+  422:             LOADI   $RA, 66
+  428:             DEC     $SP
+  430:             STORE   $RA, ($SP)
+  433:             LOADI   $RA, 65
+  439:             DEC     $SP
+  441:             STORE   $RA, ($SP)
+  444:             LOADI   $RA, 64
+  450:             DEC     $SP
+  452:             STORE   $RA, ($SP)
+  455:             LOADI   $RA, 63
+  461:             DEC     $SP
+  463:             STORE   $RA, ($SP)
+  466:             LOADI   $RA, 62
+  472:             DEC     $SP
+  474:             STORE   $RA, ($SP)
+  477:             LOADI   $RA, 61
+  483:             DEC     $SP
+  485:             STORE   $RA, ($SP)
+  488:             LOADI   $RA, 60
+  494:             DEC     $SP
+  496:             STORE   $RA, ($SP)
+  499:             LOADI   $RA, 59
+  505:             DEC     $SP
+  507:             STORE   $RA, ($SP)
+  510:             LOADI   $RA, 58
+  516:             DEC     $SP
+  518:             STORE   $RA, ($SP)
+  521:             LOADI   $RA, 57
+  527:             DEC     $SP
+  529:             STORE   $RA, ($SP)
+  532:             LOADI   $RA, 56
+  538:             DEC     $SP
+  540:             STORE   $RA, ($SP)
+  543:             LOADI   $RA, 55
+  549:             DEC     $SP
+  551:             STORE   $RA, ($SP)
+  554:             LOADI   $RA, 54
+  560:             DEC     $SP
+  562:             STORE   $RA, ($SP)
+  565:             LOADI   $RA, 53
+  571:             DEC     $SP
+  573:             STORE   $RA, ($SP)
+  576:             LOADI   $RA, 52
+  582:             DEC     $SP
+  584:             STORE   $RA, ($SP)
+  587:             LOADI   $RA, 51
+  593:             DEC     $SP
+  595:             STORE   $RA, ($SP)
+  598:             LOADI   $RA, 50
+  604:             DEC     $SP
+  606:             STORE   $RA, ($SP)
+  609:             LOADI   $RA, 49
+  615:             DEC     $SP
+  617:             STORE   $RA, ($SP)
+  620:             LOADI   $RA, 48
+  626:             DEC     $SP
+  628:             STORE   $RA, ($SP)
+  631:             LOADI   $RA, 47
+  637:             DEC     $SP
+  639:             STORE   $RA, ($SP)
+  642:             LOADI   $RA, 46
+  648:             DEC     $SP
+  650:             STORE   $RA, ($SP)
+  653:             LOADI   $RA, 45
+  659:             DEC     $SP
+  661:             STORE   $RA, ($SP)
+  664:             LOADI   $RA, 44
+  670:             DEC     $SP
+  672:             STORE   $RA, ($SP)
+  675:             LOADI   $RA, 43
+  681:             DEC     $SP
+  683:             STORE   $RA, ($SP)
+  686:             LOADI   $RA, 42
+  692:             DEC     $SP
+  694:             STORE   $RA, ($SP)
+  697:             LOADI   $RA, 41
+  703:             DEC     $SP
+  705:             STORE   $RA, ($SP)
+  708:             LOADI   $RA, 40
+  714:             DEC     $SP
+  716:             STORE   $RA, ($SP)
+  719:             LOADI   $RA, 39
+  725:             DEC     $SP
+  727:             STORE   $RA, ($SP)
+  730:             LOADI   $RA, 38
+  736:             DEC     $SP
+  738:             STORE   $RA, ($SP)
+  741:             LOADI   $RA, 37
+  747:             DEC     $SP
+  749:             STORE   $RA, ($SP)
+  752:             LOADI   $RA, 36
+  758:             DEC     $SP
+  760:             STORE   $RA, ($SP)
+  763:             LOADI   $RA, 35
+  769:             DEC     $SP
+  771:             STORE   $RA, ($SP)
+  774:             LOADI   $RA, 34
+  780:             DEC     $SP
+  782:             STORE   $RA, ($SP)
+  785:             LOADI   $RA, 33
+  791:             DEC     $SP
+  793:             STORE   $RA, ($SP)
+  796:             LOADI   $RA, 32
+  802:             DEC     $SP
+  804:             STORE   $RA, ($SP)
+  807:             LOADI   $RA, 31
+  813:             DEC     $SP
+  815:             STORE   $RA, ($SP)
+  818:             LOADI   $RA, 30
+  824:             DEC     $SP
+  826:             STORE   $RA, ($SP)
+  829:             LOADI   $RA, 29
+  835:             DEC     $SP
+  837:             STORE   $RA, ($SP)
+  840:             LOADI   $RA, 28
+  846:             DEC     $SP
+  848:             STORE   $RA, ($SP)
+  851:             LOADI   $RA, 27
+  857:             DEC     $SP
+  859:             STORE   $RA, ($SP)
+  862:             LOADI   $RA, 26
+  868:             DEC     $SP
+  870:             STORE   $RA, ($SP)
+  873:             LOADI   $RA, 25
+  879:             DEC     $SP
+  881:             STORE   $RA, ($SP)
+  884:             LOADI   $RA, 24
+  890:             DEC     $SP
+  892:             STORE   $RA, ($SP)
+  895:             LOADI   $RA, 23
+  901:             DEC     $SP
+  903:             STORE   $RA, ($SP)
+  906:             LOADI   $RA, 22
+  912:             DEC     $SP
+  914:             STORE   $RA, ($SP)
+  917:             LOADI   $RA, 21
+  923:             DEC     $SP
+  925:             STORE   $RA, ($SP)
+  928:             LOADI   $RA, 20
+  934:             DEC     $SP
+  936:             STORE   $RA, ($SP)
+  939:             LOADI   $RA, 19
+  945:             DEC     $SP
+  947:             STORE   $RA, ($SP)
+  950:             LOADI   $RA, 18
+  956:             DEC     $SP
+  958:             STORE   $RA, ($SP)
+  961:             LOADI   $RA, 17
+  967:             DEC     $SP
+  969:             STORE   $RA, ($SP)
+  972:             LOADI   $RA, 16
+  978:             DEC     $SP
+  980:             STORE   $RA, ($SP)
+  983:             LOADI   $RA, 15
+  989:             DEC     $SP
+  991:             STORE   $RA, ($SP)
+  994:             LOADI   $RA, 14
+ 1000:             DEC     $SP
+ 1002:             STORE   $RA, ($SP)
+ 1005:             LOADI   $RA, 13
+ 1011:             DEC     $SP
+ 1013:             STORE   $RA, ($SP)
+ 1016:             LOADI   $RA, 12
+ 1022:             DEC     $SP
+ 1024:             STORE   $RA, ($SP)
+ 1027:             LOADI   $RA, 11
+ 1033:             DEC     $SP
+ 1035:             STORE   $RA, ($SP)
+ 1038:             LOADI   $RA, 10
+ 1044:             DEC     $SP
+ 1046:             STORE   $RA, ($SP)
+ 1049:             LOADI   $RA, 9
+ 1055:             DEC     $SP
+ 1057:             STORE   $RA, ($SP)
+ 1060:             LOADI   $RA, 8
+ 1066:             DEC     $SP
+ 1068:             STORE   $RA, ($SP)
+ 1071:             LOADI   $RA, 7
+ 1077:             DEC     $SP
+ 1079:             STORE   $RA, ($SP)
+ 1082:             LOADI   $RA, 6
+ 1088:             DEC     $SP
+ 1090:             STORE   $RA, ($SP)
+ 1093:             LOADI   $RA, 5
+ 1099:             DEC     $SP
+ 1101:             STORE   $RA, ($SP)
+ 1104:             LOADI   $RA, 4
+ 1110:             DEC     $SP
+ 1112:             STORE   $RA, ($SP)
+ 1115:             LOADI   $RA, 39
+ 1121:             DEC     $SP
+ 1123:             STORE   $RA, ($SP)
+ 1126:             LOADI   $RA, 2
+ 1132:             DEC     $SP
+ 1134:             STORE   $RA, ($SP)
+ 1137:             LOADI   $RA, 1
+ 1143:             DEC     $SP
+ 1145:             STORE   $RA, ($SP)
+ 1148:             LOADI   $RA, foo
+ 1154:             JMPAL   $RA
+ 1156:             LOADI   $RV, 0
+ 1162:     main@1: MOVE    $RA, $FP
+ 1165:             INC     $RA
+ 1167:             LOAD    $RET, ($RA)
+ 1170:             LOAD    $FP, ($FP)
+ 1173:             LOADI   $RA, 2
+ 1179:             ADD     $SP, $SP, $RA
+ 1183:             JMP     $RET
+ 1185:        foo: DEC     $SP
+ 1187:             STORE   $RET, ($SP)
+ 1190:             DEC     $SP
+ 1192:             STORE   $FP, ($SP)
+ 1195:             MOVE    $FP, $SP
+ 1198:             DEC     $SP
+ 1200:             STORE   $GP1, ($SP)
+ 1203:             LOADI   $RB, 4
+ 1209:             ADD     $GP1, $FP, $RB
+ 1213:             MOVE    $RA, $GP1
+ 1216:             LOAD    $GP1, ($RA)
+ 1219:             DEC     $SP
+ 1221:             STORE   $GP1, ($SP)
+ 1224:             LOADI   $RA, _printint
+ 1230:             JMPAL   $RA
+ 1232:             LOADI   $RV, 0
+ 1238:      foo@2: LOAD    $GP1, ($SP)
+ 1241:             INC     $SP
+ 1243:             MOVE    $RA, $FP
+ 1246:             INC     $RA
+ 1248:             LOAD    $RET, ($RA)
+ 1251:             LOAD    $FP, ($FP)
+ 1254:             LOADI   $RA, 104
+ 1260:             ADD     $SP, $SP, $RA
+ 1264:             JMP     $RET
+ 1266:             LOADI   $RA, 0
+ 1272:             SYSCALL 0
+ 1274:  _printint: DEC     $SP
+ 1276:             STORE   $RET, ($SP)
+ 1279:             DEC     $SP
+ 1281:             STORE   $FP, ($SP)
+ 1284:             MOVE    $FP, $SP
+ 1287:             LOADI   $RA, 2
+ 1293:             ADD     $RA, $RA, $FP
+ 1297:             LOAD    $RA, ($RA)
+ 1300:             SYSCALL 5
+ 1302:             MOVE    $RA, $FP
+ 1305:             INC     $RA
+ 1307:             LOAD    $RET, ($RA)
+ 1310:             LOAD    $FP, ($FP)
+ 1313:             LOADI   $RA, 3
+ 1319:             ADD     $SP, $SP, $RA
+ 1323:             JMP     $RET
+ 1325:       _END: 

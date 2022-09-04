@@ -1,0 +1,37 @@
+// inputs: 0 1
+// output: 1
+def unit main(int x, int y) {
+  bool a;
+  bool b;
+  if (x == 0) 
+  {
+    a = false;
+  }
+  else
+  {
+    a = true;
+  }
+  if (y == 0) 
+  {
+    b = false;
+  }
+  else
+  {
+    b = true;
+  }
+  if (a && !b) 
+  {
+    output 1;
+  }
+  else
+  {
+    if (b && !a) 
+    {
+      output 1;
+    }
+    else
+    {
+      output 0;
+    }
+  }
+}

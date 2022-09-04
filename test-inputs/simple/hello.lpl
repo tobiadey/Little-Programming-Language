@@ -1,0 +1,8 @@
+// output: Hello
+def unit main() {
+  outchar 72;
+  outchar 101;
+  outchar 108;
+  outchar 108;
+  outchar 111;
+}

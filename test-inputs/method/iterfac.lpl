@@ -1,0 +1,16 @@
+// inputs: 9
+// output: 362880
+def unit main(int x) {
+  output fac(x);
+}
+
+def int fac(int x) {
+  int result;
+  result = 1;
+  while (1 < x) 
+  {
+    result = result * x;
+    x = x - 1;
+  }
+  return result;
+}

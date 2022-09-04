@@ -1,0 +1,7 @@
+   EXP(CALL(NAME foo))
+   JUMP(NAME _END)
+LABEL foo
+   PROLOGUE(0,0)
+   MOVE(TEMP RV, CONST 0)
+LABEL foo@1
+   EPILOGUE(0,0)

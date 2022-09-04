@@ -1,0 +1,2516 @@
+.data
+
+.text
+    0:             LOADI   $RA, main
+    6:             JMPAL   $RA
+    8:             JMPI    _END
+   13:       main: DEC     $SP
+   15:             STORE   $RET, ($SP)
+   18:             DEC     $SP
+   20:             STORE   $FP, ($SP)
+   23:             MOVE    $FP, $SP
+   26:             LOADI   $RA, 1
+   32:             SUB     $SP, $SP, $RA
+   36:             DEC     $SP
+   38:             STORE   $GP1, ($SP)
+   41:             DEC     $SP
+   43:             STORE   $GP2, ($SP)
+   46:             DEC     $SP
+   48:             STORE   $GP3, ($SP)
+   51:             DEC     $SP
+   53:             STORE   $GP4, ($SP)
+   56:             DEC     $SP
+   58:             STORE   $GP5, ($SP)
+   61:             DEC     $SP
+   63:             STORE   $GP6, ($SP)
+   66:             DEC     $SP
+   68:             STORE   $GP7, ($SP)
+   71:             DEC     $SP
+   73:             STORE   $GP8, ($SP)
+   76:             LOADI   $RB, -1
+   82:             ADD     $GP1, $FP, $RB
+   86:             LOADI   $RA, 0
+   92:             LOADI   $RB, 3
+   98:             ADD     $GP2, $RA, $RB
+  102:             LOADI   $RA, 0
+  108:             ADD     $GP2, $RA, $GP2
+  112:             LOADI   $RA, 0
+  118:             ADD     $GP2, $RA, $GP2
+  122:             LOADI   $RA, 0
+  128:             ADD     $GP2, $RA, $GP2
+  132:             LOADI   $RA, 1
+  138:             ADD     $GP2, $RA, $GP2
+  142:             LOADI   $RA, 1
+  148:             ADD     $GP2, $RA, $GP2
+  152:             LOADI   $RA, 5
+  158:             SUB     $GP2, $RA, $GP2
+  162:             LOADI   $RA, 1
+  168:             ADD     $GP2, $RA, $GP2
+  172:             LOADI   $RA, 0
+  178:             ADD     $GP2, $RA, $GP2
+  182:             LOADI   $RA, 1
+  188:             ADD     $GP2, $RA, $GP2
+  192:             LOADI   $RA, 1
+  198:             ADD     $GP2, $RA, $GP2
+  202:             LOADI   $RA, 1
+  208:             ADD     $GP2, $RA, $GP2
+  212:             LOADI   $RA, 1
+  218:             ADD     $GP2, $RA, $GP2
+  222:             LOADI   $RA, 5
+  228:             SUB     $GP2, $RA, $GP2
+  232:             LOADI   $RA, 1
+  238:             ADD     $GP2, $RA, $GP2
+  242:             LOADI   $RA, 1
+  248:             ADD     $GP2, $RA, $GP2
+  252:             LOADI   $RA, 1
+  258:             ADD     $GP2, $RA, $GP2
+  262:             LOADI   $RB, 2
+  268:             MUL     $GP2, $GP2, $RB
+  272:             LOADI   $RA, 0
+  278:             LOADI   $RB, 3
+  284:             ADD     $GP3, $RA, $RB
+  288:             LOADI   $RA, 0
+  294:             ADD     $GP3, $RA, $GP3
+  298:             LOADI   $RA, 0
+  304:             ADD     $GP3, $RA, $GP3
+  308:             LOADI   $RA, 0
+  314:             ADD     $GP3, $RA, $GP3
+  318:             LOADI   $RA, 1
+  324:             ADD     $GP3, $RA, $GP3
+  328:             LOADI   $RA, 1
+  334:             ADD     $GP3, $RA, $GP3
+  338:             LOADI   $RA, 5
+  344:             SUB     $GP3, $RA, $GP3
+  348:             LOADI   $RA, 1
+  354:             ADD     $GP3, $RA, $GP3
+  358:             LOADI   $RA, 0
+  364:             ADD     $GP3, $RA, $GP3
+  368:             LOADI   $RA, 1
+  374:             ADD     $GP3, $RA, $GP3
+  378:             LOADI   $RA, 1
+  384:             ADD     $GP3, $RA, $GP3
+  388:             LOADI   $RA, 1
+  394:             ADD     $GP3, $RA, $GP3
+  398:             LOADI   $RA, 1
+  404:             ADD     $GP3, $RA, $GP3
+  408:             LOADI   $RA, 5
+  414:             SUB     $GP3, $RA, $GP3
+  418:             LOADI   $RA, 1
+  424:             ADD     $GP3, $RA, $GP3
+  428:             LOADI   $RA, 1
+  434:             ADD     $GP3, $RA, $GP3
+  438:             LOADI   $RA, 1
+  444:             ADD     $GP3, $RA, $GP3
+  448:             LOADI   $RB, 2
+  454:             MUL     $GP3, $GP3, $RB
+  458:             MUL     $GP2, $GP2, $GP3
+  462:             LOADI   $RA, 0
+  468:             LOADI   $RB, 3
+  474:             ADD     $GP3, $RA, $RB
+  478:             LOADI   $RA, 0
+  484:             ADD     $GP3, $RA, $GP3
+  488:             LOADI   $RA, 0
+  494:             ADD     $GP3, $RA, $GP3
+  498:             LOADI   $RA, 0
+  504:             ADD     $GP3, $RA, $GP3
+  508:             LOADI   $RA, 1
+  514:             ADD     $GP3, $RA, $GP3
+  518:             LOADI   $RA, 1
+  524:             ADD     $GP3, $RA, $GP3
+  528:             LOADI   $RA, 5
+  534:             SUB     $GP3, $RA, $GP3
+  538:             LOADI   $RA, 1
+  544:             ADD     $GP3, $RA, $GP3
+  548:             LOADI   $RA, 0
+  554:             ADD     $GP3, $RA, $GP3
+  558:             LOADI   $RA, 1
+  564:             ADD     $GP3, $RA, $GP3
+  568:             LOADI   $RA, 1
+  574:             ADD     $GP3, $RA, $GP3
+  578:             LOADI   $RA, 1
+  584:             ADD     $GP3, $RA, $GP3
+  588:             LOADI   $RA, 1
+  594:             ADD     $GP3, $RA, $GP3
+  598:             LOADI   $RA, 5
+  604:             SUB     $GP3, $RA, $GP3
+  608:             LOADI   $RA, 1
+  614:             ADD     $GP3, $RA, $GP3
+  618:             LOADI   $RA, 1
+  624:             ADD     $GP3, $RA, $GP3
+  628:             LOADI   $RA, 1
+  634:             ADD     $GP3, $RA, $GP3
+  638:             LOADI   $RB, 2
+  644:             MUL     $GP3, $GP3, $RB
+  648:             LOADI   $RA, 0
+  654:             LOADI   $RB, 3
+  660:             ADD     $GP4, $RA, $RB
+  664:             LOADI   $RA, 0
+  670:             ADD     $GP4, $RA, $GP4
+  674:             LOADI   $RA, 0
+  680:             ADD     $GP4, $RA, $GP4
+  684:             LOADI   $RA, 0
+  690:             ADD     $GP4, $RA, $GP4
+  694:             LOADI   $RA, 1
+  700:             ADD     $GP4, $RA, $GP4
+  704:             LOADI   $RA, 1
+  710:             ADD     $GP4, $RA, $GP4
+  714:             LOADI   $RA, 5
+  720:             SUB     $GP4, $RA, $GP4
+  724:             LOADI   $RA, 1
+  730:             ADD     $GP4, $RA, $GP4
+  734:             LOADI   $RA, 0
+  740:             ADD     $GP4, $RA, $GP4
+  744:             LOADI   $RA, 1
+  750:             ADD     $GP4, $RA, $GP4
+  754:             LOADI   $RA, 1
+  760:             ADD     $GP4, $RA, $GP4
+  764:             LOADI   $RA, 1
+  770:             ADD     $GP4, $RA, $GP4
+  774:             LOADI   $RA, 1
+  780:             ADD     $GP4, $RA, $GP4
+  784:             LOADI   $RA, 5
+  790:             SUB     $GP4, $RA, $GP4
+  794:             LOADI   $RA, 1
+  800:             ADD     $GP4, $RA, $GP4
+  804:             LOADI   $RA, 1
+  810:             ADD     $GP4, $RA, $GP4
+  814:             LOADI   $RA, 1
+  820:             ADD     $GP4, $RA, $GP4
+  824:             LOADI   $RB, 2
+  830:             MUL     $GP4, $GP4, $RB
+  834:             MUL     $GP3, $GP3, $GP4
+  838:             ADD     $GP2, $GP2, $GP3
+  842:             LOADI   $RA, 0
+  848:             LOADI   $RB, 3
+  854:             ADD     $GP3, $RA, $RB
+  858:             LOADI   $RA, 0
+  864:             ADD     $GP3, $RA, $GP3
+  868:             LOADI   $RA, 0
+  874:             ADD     $GP3, $RA, $GP3
+  878:             LOADI   $RA, 0
+  884:             ADD     $GP3, $RA, $GP3
+  888:             LOADI   $RA, 1
+  894:             ADD     $GP3, $RA, $GP3
+  898:             LOADI   $RA, 1
+  904:             ADD     $GP3, $RA, $GP3
+  908:             LOADI   $RA, 5
+  914:             SUB     $GP3, $RA, $GP3
+  918:             LOADI   $RA, 1
+  924:             ADD     $GP3, $RA, $GP3
+  928:             LOADI   $RA, 0
+  934:             ADD     $GP3, $RA, $GP3
+  938:             LOADI   $RA, 1
+  944:             ADD     $GP3, $RA, $GP3
+  948:             LOADI   $RA, 1
+  954:             ADD     $GP3, $RA, $GP3
+  958:             LOADI   $RA, 1
+  964:             ADD     $GP3, $RA, $GP3
+  968:             LOADI   $RA, 1
+  974:             ADD     $GP3, $RA, $GP3
+  978:             LOADI   $RA, 5
+  984:             SUB     $GP3, $RA, $GP3
+  988:             LOADI   $RA, 1
+  994:             ADD     $GP3, $RA, $GP3
+  998:             LOADI   $RA, 1
+ 1004:             ADD     $GP3, $RA, $GP3
+ 1008:             LOADI   $RA, 1
+ 1014:             ADD     $GP3, $RA, $GP3
+ 1018:             LOADI   $RB, 2
+ 1024:             MUL     $GP3, $GP3, $RB
+ 1028:             LOADI   $RA, 0
+ 1034:             LOADI   $RB, 3
+ 1040:             ADD     $GP4, $RA, $RB
+ 1044:             LOADI   $RA, 0
+ 1050:             ADD     $GP4, $RA, $GP4
+ 1054:             LOADI   $RA, 0
+ 1060:             ADD     $GP4, $RA, $GP4
+ 1064:             LOADI   $RA, 0
+ 1070:             ADD     $GP4, $RA, $GP4
+ 1074:             LOADI   $RA, 1
+ 1080:             ADD     $GP4, $RA, $GP4
+ 1084:             LOADI   $RA, 1
+ 1090:             ADD     $GP4, $RA, $GP4
+ 1094:             LOADI   $RA, 5
+ 1100:             SUB     $GP4, $RA, $GP4
+ 1104:             LOADI   $RA, 1
+ 1110:             ADD     $GP4, $RA, $GP4
+ 1114:             LOADI   $RA, 0
+ 1120:             ADD     $GP4, $RA, $GP4
+ 1124:             LOADI   $RA, 1
+ 1130:             ADD     $GP4, $RA, $GP4
+ 1134:             LOADI   $RA, 1
+ 1140:             ADD     $GP4, $RA, $GP4
+ 1144:             LOADI   $RA, 1
+ 1150:             ADD     $GP4, $RA, $GP4
+ 1154:             LOADI   $RA, 1
+ 1160:             ADD     $GP4, $RA, $GP4
+ 1164:             LOADI   $RA, 5
+ 1170:             SUB     $GP4, $RA, $GP4
+ 1174:             LOADI   $RA, 1
+ 1180:             ADD     $GP4, $RA, $GP4
+ 1184:             LOADI   $RA, 1
+ 1190:             ADD     $GP4, $RA, $GP4
+ 1194:             LOADI   $RA, 1
+ 1200:             ADD     $GP4, $RA, $GP4
+ 1204:             LOADI   $RB, 2
+ 1210:             MUL     $GP4, $GP4, $RB
+ 1214:             MUL     $GP3, $GP3, $GP4
+ 1218:             LOADI   $RA, 0
+ 1224:             LOADI   $RB, 3
+ 1230:             ADD     $GP4, $RA, $RB
+ 1234:             LOADI   $RA, 0
+ 1240:             ADD     $GP4, $RA, $GP4
+ 1244:             LOADI   $RA, 0
+ 1250:             ADD     $GP4, $RA, $GP4
+ 1254:             LOADI   $RA, 0
+ 1260:             ADD     $GP4, $RA, $GP4
+ 1264:             LOADI   $RA, 1
+ 1270:             ADD     $GP4, $RA, $GP4
+ 1274:             LOADI   $RA, 1
+ 1280:             ADD     $GP4, $RA, $GP4
+ 1284:             LOADI   $RA, 5
+ 1290:             SUB     $GP4, $RA, $GP4
+ 1294:             LOADI   $RA, 1
+ 1300:             ADD     $GP4, $RA, $GP4
+ 1304:             LOADI   $RA, 0
+ 1310:             ADD     $GP4, $RA, $GP4
+ 1314:             LOADI   $RA, 1
+ 1320:             ADD     $GP4, $RA, $GP4
+ 1324:             LOADI   $RA, 1
+ 1330:             ADD     $GP4, $RA, $GP4
+ 1334:             LOADI   $RA, 1
+ 1340:             ADD     $GP4, $RA, $GP4
+ 1344:             LOADI   $RA, 1
+ 1350:             ADD     $GP4, $RA, $GP4
+ 1354:             LOADI   $RA, 5
+ 1360:             SUB     $GP4, $RA, $GP4
+ 1364:             LOADI   $RA, 1
+ 1370:             ADD     $GP4, $RA, $GP4
+ 1374:             LOADI   $RA, 1
+ 1380:             ADD     $GP4, $RA, $GP4
+ 1384:             LOADI   $RA, 1
+ 1390:             ADD     $GP4, $RA, $GP4
+ 1394:             LOADI   $RB, 2
+ 1400:             MUL     $GP4, $GP4, $RB
+ 1404:             LOADI   $RA, 0
+ 1410:             LOADI   $RB, 3
+ 1416:             ADD     $GP5, $RA, $RB
+ 1420:             LOADI   $RA, 0
+ 1426:             ADD     $GP5, $RA, $GP5
+ 1430:             LOADI   $RA, 0
+ 1436:             ADD     $GP5, $RA, $GP5
+ 1440:             LOADI   $RA, 0
+ 1446:             ADD     $GP5, $RA, $GP5
+ 1450:             LOADI   $RA, 1
+ 1456:             ADD     $GP5, $RA, $GP5
+ 1460:             LOADI   $RA, 1
+ 1466:             ADD     $GP5, $RA, $GP5
+ 1470:             LOADI   $RA, 5
+ 1476:             SUB     $GP5, $RA, $GP5
+ 1480:             LOADI   $RA, 1
+ 1486:             ADD     $GP5, $RA, $GP5
+ 1490:             LOADI   $RA, 0
+ 1496:             ADD     $GP5, $RA, $GP5
+ 1500:             LOADI   $RA, 1
+ 1506:             ADD     $GP5, $RA, $GP5
+ 1510:             LOADI   $RA, 1
+ 1516:             ADD     $GP5, $RA, $GP5
+ 1520:             LOADI   $RA, 1
+ 1526:             ADD     $GP5, $RA, $GP5
+ 1530:             LOADI   $RA, 1
+ 1536:             ADD     $GP5, $RA, $GP5
+ 1540:             LOADI   $RA, 5
+ 1546:             SUB     $GP5, $RA, $GP5
+ 1550:             LOADI   $RA, 1
+ 1556:             ADD     $GP5, $RA, $GP5
+ 1560:             LOADI   $RA, 1
+ 1566:             ADD     $GP5, $RA, $GP5
+ 1570:             LOADI   $RA, 1
+ 1576:             ADD     $GP5, $RA, $GP5
+ 1580:             LOADI   $RB, 2
+ 1586:             MUL     $GP5, $GP5, $RB
+ 1590:             MUL     $GP4, $GP4, $GP5
+ 1594:             ADD     $GP3, $GP3, $GP4
+ 1598:             MUL     $GP2, $GP2, $GP3
+ 1602:             LOADI   $RA, 0
+ 1608:             LOADI   $RB, 3
+ 1614:             ADD     $GP3, $RA, $RB
+ 1618:             LOADI   $RA, 0
+ 1624:             ADD     $GP3, $RA, $GP3
+ 1628:             LOADI   $RA, 0
+ 1634:             ADD     $GP3, $RA, $GP3
+ 1638:             LOADI   $RA, 0
+ 1644:             ADD     $GP3, $RA, $GP3
+ 1648:             LOADI   $RA, 1
+ 1654:             ADD     $GP3, $RA, $GP3
+ 1658:             LOADI   $RA, 1
+ 1664:             ADD     $GP3, $RA, $GP3
+ 1668:             LOADI   $RA, 5
+ 1674:             SUB     $GP3, $RA, $GP3
+ 1678:             LOADI   $RA, 1
+ 1684:             ADD     $GP3, $RA, $GP3
+ 1688:             LOADI   $RA, 0
+ 1694:             ADD     $GP3, $RA, $GP3
+ 1698:             LOADI   $RA, 1
+ 1704:             ADD     $GP3, $RA, $GP3
+ 1708:             LOADI   $RA, 1
+ 1714:             ADD     $GP3, $RA, $GP3
+ 1718:             LOADI   $RA, 1
+ 1724:             ADD     $GP3, $RA, $GP3
+ 1728:             LOADI   $RA, 1
+ 1734:             ADD     $GP3, $RA, $GP3
+ 1738:             LOADI   $RA, 5
+ 1744:             SUB     $GP3, $RA, $GP3
+ 1748:             LOADI   $RA, 1
+ 1754:             ADD     $GP3, $RA, $GP3
+ 1758:             LOADI   $RA, 1
+ 1764:             ADD     $GP3, $RA, $GP3
+ 1768:             LOADI   $RA, 1
+ 1774:             ADD     $GP3, $RA, $GP3
+ 1778:             LOADI   $RB, 2
+ 1784:             MUL     $GP3, $GP3, $RB
+ 1788:             LOADI   $RA, 0
+ 1794:             LOADI   $RB, 3
+ 1800:             ADD     $GP4, $RA, $RB
+ 1804:             LOADI   $RA, 0
+ 1810:             ADD     $GP4, $RA, $GP4
+ 1814:             LOADI   $RA, 0
+ 1820:             ADD     $GP4, $RA, $GP4
+ 1824:             LOADI   $RA, 0
+ 1830:             ADD     $GP4, $RA, $GP4
+ 1834:             LOADI   $RA, 1
+ 1840:             ADD     $GP4, $RA, $GP4
+ 1844:             LOADI   $RA, 1
+ 1850:             ADD     $GP4, $RA, $GP4
+ 1854:             LOADI   $RA, 5
+ 1860:             SUB     $GP4, $RA, $GP4
+ 1864:             LOADI   $RA, 1
+ 1870:             ADD     $GP4, $RA, $GP4
+ 1874:             LOADI   $RA, 0
+ 1880:             ADD     $GP4, $RA, $GP4
+ 1884:             LOADI   $RA, 1
+ 1890:             ADD     $GP4, $RA, $GP4
+ 1894:             LOADI   $RA, 1
+ 1900:             ADD     $GP4, $RA, $GP4
+ 1904:             LOADI   $RA, 1
+ 1910:             ADD     $GP4, $RA, $GP4
+ 1914:             LOADI   $RA, 1
+ 1920:             ADD     $GP4, $RA, $GP4
+ 1924:             LOADI   $RA, 5
+ 1930:             SUB     $GP4, $RA, $GP4
+ 1934:             LOADI   $RA, 1
+ 1940:             ADD     $GP4, $RA, $GP4
+ 1944:             LOADI   $RA, 1
+ 1950:             ADD     $GP4, $RA, $GP4
+ 1954:             LOADI   $RA, 1
+ 1960:             ADD     $GP4, $RA, $GP4
+ 1964:             LOADI   $RB, 2
+ 1970:             MUL     $GP4, $GP4, $RB
+ 1974:             MUL     $GP3, $GP3, $GP4
+ 1978:             LOADI   $RA, 0
+ 1984:             LOADI   $RB, 3
+ 1990:             ADD     $GP4, $RA, $RB
+ 1994:             LOADI   $RA, 0
+ 2000:             ADD     $GP4, $RA, $GP4
+ 2004:             LOADI   $RA, 0
+ 2010:             ADD     $GP4, $RA, $GP4
+ 2014:             LOADI   $RA, 0
+ 2020:             ADD     $GP4, $RA, $GP4
+ 2024:             LOADI   $RA, 1
+ 2030:             ADD     $GP4, $RA, $GP4
+ 2034:             LOADI   $RA, 1
+ 2040:             ADD     $GP4, $RA, $GP4
+ 2044:             LOADI   $RA, 5
+ 2050:             SUB     $GP4, $RA, $GP4
+ 2054:             LOADI   $RA, 1
+ 2060:             ADD     $GP4, $RA, $GP4
+ 2064:             LOADI   $RA, 0
+ 2070:             ADD     $GP4, $RA, $GP4
+ 2074:             LOADI   $RA, 1
+ 2080:             ADD     $GP4, $RA, $GP4
+ 2084:             LOADI   $RA, 1
+ 2090:             ADD     $GP4, $RA, $GP4
+ 2094:             LOADI   $RA, 1
+ 2100:             ADD     $GP4, $RA, $GP4
+ 2104:             LOADI   $RA, 1
+ 2110:             ADD     $GP4, $RA, $GP4
+ 2114:             LOADI   $RA, 5
+ 2120:             SUB     $GP4, $RA, $GP4
+ 2124:             LOADI   $RA, 1
+ 2130:             ADD     $GP4, $RA, $GP4
+ 2134:             LOADI   $RA, 1
+ 2140:             ADD     $GP4, $RA, $GP4
+ 2144:             LOADI   $RA, 1
+ 2150:             ADD     $GP4, $RA, $GP4
+ 2154:             LOADI   $RB, 2
+ 2160:             MUL     $GP4, $GP4, $RB
+ 2164:             LOADI   $RA, 0
+ 2170:             LOADI   $RB, 3
+ 2176:             ADD     $GP5, $RA, $RB
+ 2180:             LOADI   $RA, 0
+ 2186:             ADD     $GP5, $RA, $GP5
+ 2190:             LOADI   $RA, 0
+ 2196:             ADD     $GP5, $RA, $GP5
+ 2200:             LOADI   $RA, 0
+ 2206:             ADD     $GP5, $RA, $GP5
+ 2210:             LOADI   $RA, 1
+ 2216:             ADD     $GP5, $RA, $GP5
+ 2220:             LOADI   $RA, 1
+ 2226:             ADD     $GP5, $RA, $GP5
+ 2230:             LOADI   $RA, 5
+ 2236:             SUB     $GP5, $RA, $GP5
+ 2240:             LOADI   $RA, 1
+ 2246:             ADD     $GP5, $RA, $GP5
+ 2250:             LOADI   $RA, 0
+ 2256:             ADD     $GP5, $RA, $GP5
+ 2260:             LOADI   $RA, 1
+ 2266:             ADD     $GP5, $RA, $GP5
+ 2270:             LOADI   $RA, 1
+ 2276:             ADD     $GP5, $RA, $GP5
+ 2280:             LOADI   $RA, 1
+ 2286:             ADD     $GP5, $RA, $GP5
+ 2290:             LOADI   $RA, 1
+ 2296:             ADD     $GP5, $RA, $GP5
+ 2300:             LOADI   $RA, 5
+ 2306:             SUB     $GP5, $RA, $GP5
+ 2310:             LOADI   $RA, 1
+ 2316:             ADD     $GP5, $RA, $GP5
+ 2320:             LOADI   $RA, 1
+ 2326:             ADD     $GP5, $RA, $GP5
+ 2330:             LOADI   $RA, 1
+ 2336:             ADD     $GP5, $RA, $GP5
+ 2340:             LOADI   $RB, 2
+ 2346:             MUL     $GP5, $GP5, $RB
+ 2350:             MUL     $GP4, $GP4, $GP5
+ 2354:             ADD     $GP3, $GP3, $GP4
+ 2358:             LOADI   $RA, 0
+ 2364:             LOADI   $RB, 3
+ 2370:             ADD     $GP4, $RA, $RB
+ 2374:             LOADI   $RA, 0
+ 2380:             ADD     $GP4, $RA, $GP4
+ 2384:             LOADI   $RA, 0
+ 2390:             ADD     $GP4, $RA, $GP4
+ 2394:             LOADI   $RA, 0
+ 2400:             ADD     $GP4, $RA, $GP4
+ 2404:             LOADI   $RA, 1
+ 2410:             ADD     $GP4, $RA, $GP4
+ 2414:             LOADI   $RA, 1
+ 2420:             ADD     $GP4, $RA, $GP4
+ 2424:             LOADI   $RA, 5
+ 2430:             SUB     $GP4, $RA, $GP4
+ 2434:             LOADI   $RA, 1
+ 2440:             ADD     $GP4, $RA, $GP4
+ 2444:             LOADI   $RA, 0
+ 2450:             ADD     $GP4, $RA, $GP4
+ 2454:             LOADI   $RA, 1
+ 2460:             ADD     $GP4, $RA, $GP4
+ 2464:             LOADI   $RA, 1
+ 2470:             ADD     $GP4, $RA, $GP4
+ 2474:             LOADI   $RA, 1
+ 2480:             ADD     $GP4, $RA, $GP4
+ 2484:             LOADI   $RA, 1
+ 2490:             ADD     $GP4, $RA, $GP4
+ 2494:             LOADI   $RA, 5
+ 2500:             SUB     $GP4, $RA, $GP4
+ 2504:             LOADI   $RA, 1
+ 2510:             ADD     $GP4, $RA, $GP4
+ 2514:             LOADI   $RA, 1
+ 2520:             ADD     $GP4, $RA, $GP4
+ 2524:             LOADI   $RA, 1
+ 2530:             ADD     $GP4, $RA, $GP4
+ 2534:             LOADI   $RB, 2
+ 2540:             MUL     $GP4, $GP4, $RB
+ 2544:             LOADI   $RA, 0
+ 2550:             LOADI   $RB, 3
+ 2556:             ADD     $GP5, $RA, $RB
+ 2560:             LOADI   $RA, 0
+ 2566:             ADD     $GP5, $RA, $GP5
+ 2570:             LOADI   $RA, 0
+ 2576:             ADD     $GP5, $RA, $GP5
+ 2580:             LOADI   $RA, 0
+ 2586:             ADD     $GP5, $RA, $GP5
+ 2590:             LOADI   $RA, 1
+ 2596:             ADD     $GP5, $RA, $GP5
+ 2600:             LOADI   $RA, 1
+ 2606:             ADD     $GP5, $RA, $GP5
+ 2610:             LOADI   $RA, 5
+ 2616:             SUB     $GP5, $RA, $GP5
+ 2620:             LOADI   $RA, 1
+ 2626:             ADD     $GP5, $RA, $GP5
+ 2630:             LOADI   $RA, 0
+ 2636:             ADD     $GP5, $RA, $GP5
+ 2640:             LOADI   $RA, 1
+ 2646:             ADD     $GP5, $RA, $GP5
+ 2650:             LOADI   $RA, 1
+ 2656:             ADD     $GP5, $RA, $GP5
+ 2660:             LOADI   $RA, 1
+ 2666:             ADD     $GP5, $RA, $GP5
+ 2670:             LOADI   $RA, 1
+ 2676:             ADD     $GP5, $RA, $GP5
+ 2680:             LOADI   $RA, 5
+ 2686:             SUB     $GP5, $RA, $GP5
+ 2690:             LOADI   $RA, 1
+ 2696:             ADD     $GP5, $RA, $GP5
+ 2700:             LOADI   $RA, 1
+ 2706:             ADD     $GP5, $RA, $GP5
+ 2710:             LOADI   $RA, 1
+ 2716:             ADD     $GP5, $RA, $GP5
+ 2720:             LOADI   $RB, 2
+ 2726:             MUL     $GP5, $GP5, $RB
+ 2730:             MUL     $GP4, $GP4, $GP5
+ 2734:             LOADI   $RA, 0
+ 2740:             LOADI   $RB, 3
+ 2746:             ADD     $GP5, $RA, $RB
+ 2750:             LOADI   $RA, 0
+ 2756:             ADD     $GP5, $RA, $GP5
+ 2760:             LOADI   $RA, 0
+ 2766:             ADD     $GP5, $RA, $GP5
+ 2770:             LOADI   $RA, 0
+ 2776:             ADD     $GP5, $RA, $GP5
+ 2780:             LOADI   $RA, 1
+ 2786:             ADD     $GP5, $RA, $GP5
+ 2790:             LOADI   $RA, 1
+ 2796:             ADD     $GP5, $RA, $GP5
+ 2800:             LOADI   $RA, 5
+ 2806:             SUB     $GP5, $RA, $GP5
+ 2810:             LOADI   $RA, 1
+ 2816:             ADD     $GP5, $RA, $GP5
+ 2820:             LOADI   $RA, 0
+ 2826:             ADD     $GP5, $RA, $GP5
+ 2830:             LOADI   $RA, 1
+ 2836:             ADD     $GP5, $RA, $GP5
+ 2840:             LOADI   $RA, 1
+ 2846:             ADD     $GP5, $RA, $GP5
+ 2850:             LOADI   $RA, 1
+ 2856:             ADD     $GP5, $RA, $GP5
+ 2860:             LOADI   $RA, 1
+ 2866:             ADD     $GP5, $RA, $GP5
+ 2870:             LOADI   $RA, 5
+ 2876:             SUB     $GP5, $RA, $GP5
+ 2880:             LOADI   $RA, 1
+ 2886:             ADD     $GP5, $RA, $GP5
+ 2890:             LOADI   $RA, 1
+ 2896:             ADD     $GP5, $RA, $GP5
+ 2900:             LOADI   $RA, 1
+ 2906:             ADD     $GP5, $RA, $GP5
+ 2910:             LOADI   $RB, 2
+ 2916:             MUL     $GP5, $GP5, $RB
+ 2920:             LOADI   $RA, 0
+ 2926:             LOADI   $RB, 3
+ 2932:             ADD     $GP6, $RA, $RB
+ 2936:             LOADI   $RA, 0
+ 2942:             ADD     $GP6, $RA, $GP6
+ 2946:             LOADI   $RA, 0
+ 2952:             ADD     $GP6, $RA, $GP6
+ 2956:             LOADI   $RA, 0
+ 2962:             ADD     $GP6, $RA, $GP6
+ 2966:             LOADI   $RA, 1
+ 2972:             ADD     $GP6, $RA, $GP6
+ 2976:             LOADI   $RA, 1
+ 2982:             ADD     $GP6, $RA, $GP6
+ 2986:             LOADI   $RA, 5
+ 2992:             SUB     $GP6, $RA, $GP6
+ 2996:             LOADI   $RA, 1
+ 3002:             ADD     $GP6, $RA, $GP6
+ 3006:             LOADI   $RA, 0
+ 3012:             ADD     $GP6, $RA, $GP6
+ 3016:             LOADI   $RA, 1
+ 3022:             ADD     $GP6, $RA, $GP6
+ 3026:             LOADI   $RA, 1
+ 3032:             ADD     $GP6, $RA, $GP6
+ 3036:             LOADI   $RA, 1
+ 3042:             ADD     $GP6, $RA, $GP6
+ 3046:             LOADI   $RA, 1
+ 3052:             ADD     $GP6, $RA, $GP6
+ 3056:             LOADI   $RA, 5
+ 3062:             SUB     $GP6, $RA, $GP6
+ 3066:             LOADI   $RA, 1
+ 3072:             ADD     $GP6, $RA, $GP6
+ 3076:             LOADI   $RA, 1
+ 3082:             ADD     $GP6, $RA, $GP6
+ 3086:             LOADI   $RA, 1
+ 3092:             ADD     $GP6, $RA, $GP6
+ 3096:             LOADI   $RB, 2
+ 3102:             MUL     $GP6, $GP6, $RB
+ 3106:             MUL     $GP5, $GP5, $GP6
+ 3110:             ADD     $GP4, $GP4, $GP5
+ 3114:             MUL     $GP3, $GP3, $GP4
+ 3118:             ADD     $GP2, $GP2, $GP3
+ 3122:             LOADI   $RA, 0
+ 3128:             LOADI   $RB, 3
+ 3134:             ADD     $GP3, $RA, $RB
+ 3138:             LOADI   $RA, 0
+ 3144:             ADD     $GP3, $RA, $GP3
+ 3148:             LOADI   $RA, 0
+ 3154:             ADD     $GP3, $RA, $GP3
+ 3158:             LOADI   $RA, 0
+ 3164:             ADD     $GP3, $RA, $GP3
+ 3168:             LOADI   $RA, 1
+ 3174:             ADD     $GP3, $RA, $GP3
+ 3178:             LOADI   $RA, 1
+ 3184:             ADD     $GP3, $RA, $GP3
+ 3188:             LOADI   $RA, 5
+ 3194:             SUB     $GP3, $RA, $GP3
+ 3198:             LOADI   $RA, 1
+ 3204:             ADD     $GP3, $RA, $GP3
+ 3208:             LOADI   $RA, 0
+ 3214:             ADD     $GP3, $RA, $GP3
+ 3218:             LOADI   $RA, 1
+ 3224:             ADD     $GP3, $RA, $GP3
+ 3228:             LOADI   $RA, 1
+ 3234:             ADD     $GP3, $RA, $GP3
+ 3238:             LOADI   $RA, 1
+ 3244:             ADD     $GP3, $RA, $GP3
+ 3248:             LOADI   $RA, 1
+ 3254:             ADD     $GP3, $RA, $GP3
+ 3258:             LOADI   $RA, 5
+ 3264:             SUB     $GP3, $RA, $GP3
+ 3268:             LOADI   $RA, 1
+ 3274:             ADD     $GP3, $RA, $GP3
+ 3278:             LOADI   $RA, 1
+ 3284:             ADD     $GP3, $RA, $GP3
+ 3288:             LOADI   $RA, 1
+ 3294:             ADD     $GP3, $RA, $GP3
+ 3298:             LOADI   $RB, 2
+ 3304:             MUL     $GP3, $GP3, $RB
+ 3308:             LOADI   $RA, 0
+ 3314:             LOADI   $RB, 3
+ 3320:             ADD     $GP4, $RA, $RB
+ 3324:             LOADI   $RA, 0
+ 3330:             ADD     $GP4, $RA, $GP4
+ 3334:             LOADI   $RA, 0
+ 3340:             ADD     $GP4, $RA, $GP4
+ 3344:             LOADI   $RA, 0
+ 3350:             ADD     $GP4, $RA, $GP4
+ 3354:             LOADI   $RA, 1
+ 3360:             ADD     $GP4, $RA, $GP4
+ 3364:             LOADI   $RA, 1
+ 3370:             ADD     $GP4, $RA, $GP4
+ 3374:             LOADI   $RA, 5
+ 3380:             SUB     $GP4, $RA, $GP4
+ 3384:             LOADI   $RA, 1
+ 3390:             ADD     $GP4, $RA, $GP4
+ 3394:             LOADI   $RA, 0
+ 3400:             ADD     $GP4, $RA, $GP4
+ 3404:             LOADI   $RA, 1
+ 3410:             ADD     $GP4, $RA, $GP4
+ 3414:             LOADI   $RA, 1
+ 3420:             ADD     $GP4, $RA, $GP4
+ 3424:             LOADI   $RA, 1
+ 3430:             ADD     $GP4, $RA, $GP4
+ 3434:             LOADI   $RA, 1
+ 3440:             ADD     $GP4, $RA, $GP4
+ 3444:             LOADI   $RA, 5
+ 3450:             SUB     $GP4, $RA, $GP4
+ 3454:             LOADI   $RA, 1
+ 3460:             ADD     $GP4, $RA, $GP4
+ 3464:             LOADI   $RA, 1
+ 3470:             ADD     $GP4, $RA, $GP4
+ 3474:             LOADI   $RA, 1
+ 3480:             ADD     $GP4, $RA, $GP4
+ 3484:             LOADI   $RB, 2
+ 3490:             MUL     $GP4, $GP4, $RB
+ 3494:             MUL     $GP3, $GP3, $GP4
+ 3498:             LOADI   $RA, 0
+ 3504:             LOADI   $RB, 3
+ 3510:             ADD     $GP4, $RA, $RB
+ 3514:             LOADI   $RA, 0
+ 3520:             ADD     $GP4, $RA, $GP4
+ 3524:             LOADI   $RA, 0
+ 3530:             ADD     $GP4, $RA, $GP4
+ 3534:             LOADI   $RA, 0
+ 3540:             ADD     $GP4, $RA, $GP4
+ 3544:             LOADI   $RA, 1
+ 3550:             ADD     $GP4, $RA, $GP4
+ 3554:             LOADI   $RA, 1
+ 3560:             ADD     $GP4, $RA, $GP4
+ 3564:             LOADI   $RA, 5
+ 3570:             SUB     $GP4, $RA, $GP4
+ 3574:             LOADI   $RA, 1
+ 3580:             ADD     $GP4, $RA, $GP4
+ 3584:             LOADI   $RA, 0
+ 3590:             ADD     $GP4, $RA, $GP4
+ 3594:             LOADI   $RA, 1
+ 3600:             ADD     $GP4, $RA, $GP4
+ 3604:             LOADI   $RA, 1
+ 3610:             ADD     $GP4, $RA, $GP4
+ 3614:             LOADI   $RA, 1
+ 3620:             ADD     $GP4, $RA, $GP4
+ 3624:             LOADI   $RA, 1
+ 3630:             ADD     $GP4, $RA, $GP4
+ 3634:             LOADI   $RA, 5
+ 3640:             SUB     $GP4, $RA, $GP4
+ 3644:             LOADI   $RA, 1
+ 3650:             ADD     $GP4, $RA, $GP4
+ 3654:             LOADI   $RA, 1
+ 3660:             ADD     $GP4, $RA, $GP4
+ 3664:             LOADI   $RA, 1
+ 3670:             ADD     $GP4, $RA, $GP4
+ 3674:             LOADI   $RB, 2
+ 3680:             MUL     $GP4, $GP4, $RB
+ 3684:             LOADI   $RA, 0
+ 3690:             LOADI   $RB, 3
+ 3696:             ADD     $GP5, $RA, $RB
+ 3700:             LOADI   $RA, 0
+ 3706:             ADD     $GP5, $RA, $GP5
+ 3710:             LOADI   $RA, 0
+ 3716:             ADD     $GP5, $RA, $GP5
+ 3720:             LOADI   $RA, 0
+ 3726:             ADD     $GP5, $RA, $GP5
+ 3730:             LOADI   $RA, 1
+ 3736:             ADD     $GP5, $RA, $GP5
+ 3740:             LOADI   $RA, 1
+ 3746:             ADD     $GP5, $RA, $GP5
+ 3750:             LOADI   $RA, 5
+ 3756:             SUB     $GP5, $RA, $GP5
+ 3760:             LOADI   $RA, 1
+ 3766:             ADD     $GP5, $RA, $GP5
+ 3770:             LOADI   $RA, 0
+ 3776:             ADD     $GP5, $RA, $GP5
+ 3780:             LOADI   $RA, 1
+ 3786:             ADD     $GP5, $RA, $GP5
+ 3790:             LOADI   $RA, 1
+ 3796:             ADD     $GP5, $RA, $GP5
+ 3800:             LOADI   $RA, 1
+ 3806:             ADD     $GP5, $RA, $GP5
+ 3810:             LOADI   $RA, 1
+ 3816:             ADD     $GP5, $RA, $GP5
+ 3820:             LOADI   $RA, 5
+ 3826:             SUB     $GP5, $RA, $GP5
+ 3830:             LOADI   $RA, 1
+ 3836:             ADD     $GP5, $RA, $GP5
+ 3840:             LOADI   $RA, 1
+ 3846:             ADD     $GP5, $RA, $GP5
+ 3850:             LOADI   $RA, 1
+ 3856:             ADD     $GP5, $RA, $GP5
+ 3860:             LOADI   $RB, 2
+ 3866:             MUL     $GP5, $GP5, $RB
+ 3870:             MUL     $GP4, $GP4, $GP5
+ 3874:             ADD     $GP3, $GP3, $GP4
+ 3878:             LOADI   $RA, 0
+ 3884:             LOADI   $RB, 3
+ 3890:             ADD     $GP4, $RA, $RB
+ 3894:             LOADI   $RA, 0
+ 3900:             ADD     $GP4, $RA, $GP4
+ 3904:             LOADI   $RA, 0
+ 3910:             ADD     $GP4, $RA, $GP4
+ 3914:             LOADI   $RA, 0
+ 3920:             ADD     $GP4, $RA, $GP4
+ 3924:             LOADI   $RA, 1
+ 3930:             ADD     $GP4, $RA, $GP4
+ 3934:             LOADI   $RA, 1
+ 3940:             ADD     $GP4, $RA, $GP4
+ 3944:             LOADI   $RA, 5
+ 3950:             SUB     $GP4, $RA, $GP4
+ 3954:             LOADI   $RA, 1
+ 3960:             ADD     $GP4, $RA, $GP4
+ 3964:             LOADI   $RA, 0
+ 3970:             ADD     $GP4, $RA, $GP4
+ 3974:             LOADI   $RA, 1
+ 3980:             ADD     $GP4, $RA, $GP4
+ 3984:             LOADI   $RA, 1
+ 3990:             ADD     $GP4, $RA, $GP4
+ 3994:             LOADI   $RA, 1
+ 4000:             ADD     $GP4, $RA, $GP4
+ 4004:             LOADI   $RA, 1
+ 4010:             ADD     $GP4, $RA, $GP4
+ 4014:             LOADI   $RA, 5
+ 4020:             SUB     $GP4, $RA, $GP4
+ 4024:             LOADI   $RA, 1
+ 4030:             ADD     $GP4, $RA, $GP4
+ 4034:             LOADI   $RA, 1
+ 4040:             ADD     $GP4, $RA, $GP4
+ 4044:             LOADI   $RA, 1
+ 4050:             ADD     $GP4, $RA, $GP4
+ 4054:             LOADI   $RB, 2
+ 4060:             MUL     $GP4, $GP4, $RB
+ 4064:             LOADI   $RA, 0
+ 4070:             LOADI   $RB, 3
+ 4076:             ADD     $GP5, $RA, $RB
+ 4080:             LOADI   $RA, 0
+ 4086:             ADD     $GP5, $RA, $GP5
+ 4090:             LOADI   $RA, 0
+ 4096:             ADD     $GP5, $RA, $GP5
+ 4100:             LOADI   $RA, 0
+ 4106:             ADD     $GP5, $RA, $GP5
+ 4110:             LOADI   $RA, 1
+ 4116:             ADD     $GP5, $RA, $GP5
+ 4120:             LOADI   $RA, 1
+ 4126:             ADD     $GP5, $RA, $GP5
+ 4130:             LOADI   $RA, 5
+ 4136:             SUB     $GP5, $RA, $GP5
+ 4140:             LOADI   $RA, 1
+ 4146:             ADD     $GP5, $RA, $GP5
+ 4150:             LOADI   $RA, 0
+ 4156:             ADD     $GP5, $RA, $GP5
+ 4160:             LOADI   $RA, 1
+ 4166:             ADD     $GP5, $RA, $GP5
+ 4170:             LOADI   $RA, 1
+ 4176:             ADD     $GP5, $RA, $GP5
+ 4180:             LOADI   $RA, 1
+ 4186:             ADD     $GP5, $RA, $GP5
+ 4190:             LOADI   $RA, 1
+ 4196:             ADD     $GP5, $RA, $GP5
+ 4200:             LOADI   $RA, 5
+ 4206:             SUB     $GP5, $RA, $GP5
+ 4210:             LOADI   $RA, 1
+ 4216:             ADD     $GP5, $RA, $GP5
+ 4220:             LOADI   $RA, 1
+ 4226:             ADD     $GP5, $RA, $GP5
+ 4230:             LOADI   $RA, 1
+ 4236:             ADD     $GP5, $RA, $GP5
+ 4240:             LOADI   $RB, 2
+ 4246:             MUL     $GP5, $GP5, $RB
+ 4250:             MUL     $GP4, $GP4, $GP5
+ 4254:             LOADI   $RA, 0
+ 4260:             LOADI   $RB, 3
+ 4266:             ADD     $GP5, $RA, $RB
+ 4270:             LOADI   $RA, 0
+ 4276:             ADD     $GP5, $RA, $GP5
+ 4280:             LOADI   $RA, 0
+ 4286:             ADD     $GP5, $RA, $GP5
+ 4290:             LOADI   $RA, 0
+ 4296:             ADD     $GP5, $RA, $GP5
+ 4300:             LOADI   $RA, 1
+ 4306:             ADD     $GP5, $RA, $GP5
+ 4310:             LOADI   $RA, 1
+ 4316:             ADD     $GP5, $RA, $GP5
+ 4320:             LOADI   $RA, 5
+ 4326:             SUB     $GP5, $RA, $GP5
+ 4330:             LOADI   $RA, 1
+ 4336:             ADD     $GP5, $RA, $GP5
+ 4340:             LOADI   $RA, 0
+ 4346:             ADD     $GP5, $RA, $GP5
+ 4350:             LOADI   $RA, 1
+ 4356:             ADD     $GP5, $RA, $GP5
+ 4360:             LOADI   $RA, 1
+ 4366:             ADD     $GP5, $RA, $GP5
+ 4370:             LOADI   $RA, 1
+ 4376:             ADD     $GP5, $RA, $GP5
+ 4380:             LOADI   $RA, 1
+ 4386:             ADD     $GP5, $RA, $GP5
+ 4390:             LOADI   $RA, 5
+ 4396:             SUB     $GP5, $RA, $GP5
+ 4400:             LOADI   $RA, 1
+ 4406:             ADD     $GP5, $RA, $GP5
+ 4410:             LOADI   $RA, 1
+ 4416:             ADD     $GP5, $RA, $GP5
+ 4420:             LOADI   $RA, 1
+ 4426:             ADD     $GP5, $RA, $GP5
+ 4430:             LOADI   $RB, 2
+ 4436:             MUL     $GP5, $GP5, $RB
+ 4440:             LOADI   $RA, 0
+ 4446:             LOADI   $RB, 3
+ 4452:             ADD     $GP6, $RA, $RB
+ 4456:             LOADI   $RA, 0
+ 4462:             ADD     $GP6, $RA, $GP6
+ 4466:             LOADI   $RA, 0
+ 4472:             ADD     $GP6, $RA, $GP6
+ 4476:             LOADI   $RA, 0
+ 4482:             ADD     $GP6, $RA, $GP6
+ 4486:             LOADI   $RA, 1
+ 4492:             ADD     $GP6, $RA, $GP6
+ 4496:             LOADI   $RA, 1
+ 4502:             ADD     $GP6, $RA, $GP6
+ 4506:             LOADI   $RA, 5
+ 4512:             SUB     $GP6, $RA, $GP6
+ 4516:             LOADI   $RA, 1
+ 4522:             ADD     $GP6, $RA, $GP6
+ 4526:             LOADI   $RA, 0
+ 4532:             ADD     $GP6, $RA, $GP6
+ 4536:             LOADI   $RA, 1
+ 4542:             ADD     $GP6, $RA, $GP6
+ 4546:             LOADI   $RA, 1
+ 4552:             ADD     $GP6, $RA, $GP6
+ 4556:             LOADI   $RA, 1
+ 4562:             ADD     $GP6, $RA, $GP6
+ 4566:             LOADI   $RA, 1
+ 4572:             ADD     $GP6, $RA, $GP6
+ 4576:             LOADI   $RA, 5
+ 4582:             SUB     $GP6, $RA, $GP6
+ 4586:             LOADI   $RA, 1
+ 4592:             ADD     $GP6, $RA, $GP6
+ 4596:             LOADI   $RA, 1
+ 4602:             ADD     $GP6, $RA, $GP6
+ 4606:             LOADI   $RA, 1
+ 4612:             ADD     $GP6, $RA, $GP6
+ 4616:             LOADI   $RB, 2
+ 4622:             MUL     $GP6, $GP6, $RB
+ 4626:             MUL     $GP5, $GP5, $GP6
+ 4630:             ADD     $GP4, $GP4, $GP5
+ 4634:             MUL     $GP3, $GP3, $GP4
+ 4638:             LOADI   $RA, 0
+ 4644:             LOADI   $RB, 3
+ 4650:             ADD     $GP4, $RA, $RB
+ 4654:             LOADI   $RA, 0
+ 4660:             ADD     $GP4, $RA, $GP4
+ 4664:             LOADI   $RA, 0
+ 4670:             ADD     $GP4, $RA, $GP4
+ 4674:             LOADI   $RA, 0
+ 4680:             ADD     $GP4, $RA, $GP4
+ 4684:             LOADI   $RA, 1
+ 4690:             ADD     $GP4, $RA, $GP4
+ 4694:             LOADI   $RA, 1
+ 4700:             ADD     $GP4, $RA, $GP4
+ 4704:             LOADI   $RA, 5
+ 4710:             SUB     $GP4, $RA, $GP4
+ 4714:             LOADI   $RA, 1
+ 4720:             ADD     $GP4, $RA, $GP4
+ 4724:             LOADI   $RA, 0
+ 4730:             ADD     $GP4, $RA, $GP4
+ 4734:             LOADI   $RA, 1
+ 4740:             ADD     $GP4, $RA, $GP4
+ 4744:             LOADI   $RA, 1
+ 4750:             ADD     $GP4, $RA, $GP4
+ 4754:             LOADI   $RA, 1
+ 4760:             ADD     $GP4, $RA, $GP4
+ 4764:             LOADI   $RA, 1
+ 4770:             ADD     $GP4, $RA, $GP4
+ 4774:             LOADI   $RA, 5
+ 4780:             SUB     $GP4, $RA, $GP4
+ 4784:             LOADI   $RA, 1
+ 4790:             ADD     $GP4, $RA, $GP4
+ 4794:             LOADI   $RA, 1
+ 4800:             ADD     $GP4, $RA, $GP4
+ 4804:             LOADI   $RA, 1
+ 4810:             ADD     $GP4, $RA, $GP4
+ 4814:             LOADI   $RB, 2
+ 4820:             MUL     $GP4, $GP4, $RB
+ 4824:             LOADI   $RA, 0
+ 4830:             LOADI   $RB, 3
+ 4836:             ADD     $GP5, $RA, $RB
+ 4840:             LOADI   $RA, 0
+ 4846:             ADD     $GP5, $RA, $GP5
+ 4850:             LOADI   $RA, 0
+ 4856:             ADD     $GP5, $RA, $GP5
+ 4860:             LOADI   $RA, 0
+ 4866:             ADD     $GP5, $RA, $GP5
+ 4870:             LOADI   $RA, 1
+ 4876:             ADD     $GP5, $RA, $GP5
+ 4880:             LOADI   $RA, 1
+ 4886:             ADD     $GP5, $RA, $GP5
+ 4890:             LOADI   $RA, 5
+ 4896:             SUB     $GP5, $RA, $GP5
+ 4900:             LOADI   $RA, 1
+ 4906:             ADD     $GP5, $RA, $GP5
+ 4910:             LOADI   $RA, 0
+ 4916:             ADD     $GP5, $RA, $GP5
+ 4920:             LOADI   $RA, 1
+ 4926:             ADD     $GP5, $RA, $GP5
+ 4930:             LOADI   $RA, 1
+ 4936:             ADD     $GP5, $RA, $GP5
+ 4940:             LOADI   $RA, 1
+ 4946:             ADD     $GP5, $RA, $GP5
+ 4950:             LOADI   $RA, 1
+ 4956:             ADD     $GP5, $RA, $GP5
+ 4960:             LOADI   $RA, 5
+ 4966:             SUB     $GP5, $RA, $GP5
+ 4970:             LOADI   $RA, 1
+ 4976:             ADD     $GP5, $RA, $GP5
+ 4980:             LOADI   $RA, 1
+ 4986:             ADD     $GP5, $RA, $GP5
+ 4990:             LOADI   $RA, 1
+ 4996:             ADD     $GP5, $RA, $GP5
+ 5000:             LOADI   $RB, 2
+ 5006:             MUL     $GP5, $GP5, $RB
+ 5010:             MUL     $GP4, $GP4, $GP5
+ 5014:             LOADI   $RA, 0
+ 5020:             LOADI   $RB, 3
+ 5026:             ADD     $GP5, $RA, $RB
+ 5030:             LOADI   $RA, 0
+ 5036:             ADD     $GP5, $RA, $GP5
+ 5040:             LOADI   $RA, 0
+ 5046:             ADD     $GP5, $RA, $GP5
+ 5050:             LOADI   $RA, 0
+ 5056:             ADD     $GP5, $RA, $GP5
+ 5060:             LOADI   $RA, 1
+ 5066:             ADD     $GP5, $RA, $GP5
+ 5070:             LOADI   $RA, 1
+ 5076:             ADD     $GP5, $RA, $GP5
+ 5080:             LOADI   $RA, 5
+ 5086:             SUB     $GP5, $RA, $GP5
+ 5090:             LOADI   $RA, 1
+ 5096:             ADD     $GP5, $RA, $GP5
+ 5100:             LOADI   $RA, 0
+ 5106:             ADD     $GP5, $RA, $GP5
+ 5110:             LOADI   $RA, 1
+ 5116:             ADD     $GP5, $RA, $GP5
+ 5120:             LOADI   $RA, 1
+ 5126:             ADD     $GP5, $RA, $GP5
+ 5130:             LOADI   $RA, 1
+ 5136:             ADD     $GP5, $RA, $GP5
+ 5140:             LOADI   $RA, 1
+ 5146:             ADD     $GP5, $RA, $GP5
+ 5150:             LOADI   $RA, 5
+ 5156:             SUB     $GP5, $RA, $GP5
+ 5160:             LOADI   $RA, 1
+ 5166:             ADD     $GP5, $RA, $GP5
+ 5170:             LOADI   $RA, 1
+ 5176:             ADD     $GP5, $RA, $GP5
+ 5180:             LOADI   $RA, 1
+ 5186:             ADD     $GP5, $RA, $GP5
+ 5190:             LOADI   $RB, 2
+ 5196:             MUL     $GP5, $GP5, $RB
+ 5200:             LOADI   $RA, 0
+ 5206:             LOADI   $RB, 3
+ 5212:             ADD     $GP6, $RA, $RB
+ 5216:             LOADI   $RA, 0
+ 5222:             ADD     $GP6, $RA, $GP6
+ 5226:             LOADI   $RA, 0
+ 5232:             ADD     $GP6, $RA, $GP6
+ 5236:             LOADI   $RA, 0
+ 5242:             ADD     $GP6, $RA, $GP6
+ 5246:             LOADI   $RA, 1
+ 5252:             ADD     $GP6, $RA, $GP6
+ 5256:             LOADI   $RA, 1
+ 5262:             ADD     $GP6, $RA, $GP6
+ 5266:             LOADI   $RA, 5
+ 5272:             SUB     $GP6, $RA, $GP6
+ 5276:             LOADI   $RA, 1
+ 5282:             ADD     $GP6, $RA, $GP6
+ 5286:             LOADI   $RA, 0
+ 5292:             ADD     $GP6, $RA, $GP6
+ 5296:             LOADI   $RA, 1
+ 5302:             ADD     $GP6, $RA, $GP6
+ 5306:             LOADI   $RA, 1
+ 5312:             ADD     $GP6, $RA, $GP6
+ 5316:             LOADI   $RA, 1
+ 5322:             ADD     $GP6, $RA, $GP6
+ 5326:             LOADI   $RA, 1
+ 5332:             ADD     $GP6, $RA, $GP6
+ 5336:             LOADI   $RA, 5
+ 5342:             SUB     $GP6, $RA, $GP6
+ 5346:             LOADI   $RA, 1
+ 5352:             ADD     $GP6, $RA, $GP6
+ 5356:             LOADI   $RA, 1
+ 5362:             ADD     $GP6, $RA, $GP6
+ 5366:             LOADI   $RA, 1
+ 5372:             ADD     $GP6, $RA, $GP6
+ 5376:             LOADI   $RB, 2
+ 5382:             MUL     $GP6, $GP6, $RB
+ 5386:             MUL     $GP5, $GP5, $GP6
+ 5390:             ADD     $GP4, $GP4, $GP5
+ 5394:             LOADI   $RA, 0
+ 5400:             LOADI   $RB, 3
+ 5406:             ADD     $GP5, $RA, $RB
+ 5410:             LOADI   $RA, 0
+ 5416:             ADD     $GP5, $RA, $GP5
+ 5420:             LOADI   $RA, 0
+ 5426:             ADD     $GP5, $RA, $GP5
+ 5430:             LOADI   $RA, 0
+ 5436:             ADD     $GP5, $RA, $GP5
+ 5440:             LOADI   $RA, 1
+ 5446:             ADD     $GP5, $RA, $GP5
+ 5450:             LOADI   $RA, 1
+ 5456:             ADD     $GP5, $RA, $GP5
+ 5460:             LOADI   $RA, 5
+ 5466:             SUB     $GP5, $RA, $GP5
+ 5470:             LOADI   $RA, 1
+ 5476:             ADD     $GP5, $RA, $GP5
+ 5480:             LOADI   $RA, 0
+ 5486:             ADD     $GP5, $RA, $GP5
+ 5490:             LOADI   $RA, 1
+ 5496:             ADD     $GP5, $RA, $GP5
+ 5500:             LOADI   $RA, 1
+ 5506:             ADD     $GP5, $RA, $GP5
+ 5510:             LOADI   $RA, 1
+ 5516:             ADD     $GP5, $RA, $GP5
+ 5520:             LOADI   $RA, 1
+ 5526:             ADD     $GP5, $RA, $GP5
+ 5530:             LOADI   $RA, 5
+ 5536:             SUB     $GP5, $RA, $GP5
+ 5540:             LOADI   $RA, 1
+ 5546:             ADD     $GP5, $RA, $GP5
+ 5550:             LOADI   $RA, 1
+ 5556:             ADD     $GP5, $RA, $GP5
+ 5560:             LOADI   $RA, 1
+ 5566:             ADD     $GP5, $RA, $GP5
+ 5570:             LOADI   $RB, 2
+ 5576:             MUL     $GP5, $GP5, $RB
+ 5580:             LOADI   $RA, 0
+ 5586:             LOADI   $RB, 3
+ 5592:             ADD     $GP6, $RA, $RB
+ 5596:             LOADI   $RA, 0
+ 5602:             ADD     $GP6, $RA, $GP6
+ 5606:             LOADI   $RA, 0
+ 5612:             ADD     $GP6, $RA, $GP6
+ 5616:             LOADI   $RA, 0
+ 5622:             ADD     $GP6, $RA, $GP6
+ 5626:             LOADI   $RA, 1
+ 5632:             ADD     $GP6, $RA, $GP6
+ 5636:             LOADI   $RA, 1
+ 5642:             ADD     $GP6, $RA, $GP6
+ 5646:             LOADI   $RA, 5
+ 5652:             SUB     $GP6, $RA, $GP6
+ 5656:             LOADI   $RA, 1
+ 5662:             ADD     $GP6, $RA, $GP6
+ 5666:             LOADI   $RA, 0
+ 5672:             ADD     $GP6, $RA, $GP6
+ 5676:             LOADI   $RA, 1
+ 5682:             ADD     $GP6, $RA, $GP6
+ 5686:             LOADI   $RA, 1
+ 5692:             ADD     $GP6, $RA, $GP6
+ 5696:             LOADI   $RA, 1
+ 5702:             ADD     $GP6, $RA, $GP6
+ 5706:             LOADI   $RA, 1
+ 5712:             ADD     $GP6, $RA, $GP6
+ 5716:             LOADI   $RA, 5
+ 5722:             SUB     $GP6, $RA, $GP6
+ 5726:             LOADI   $RA, 1
+ 5732:             ADD     $GP6, $RA, $GP6
+ 5736:             LOADI   $RA, 1
+ 5742:             ADD     $GP6, $RA, $GP6
+ 5746:             LOADI   $RA, 1
+ 5752:             ADD     $GP6, $RA, $GP6
+ 5756:             LOADI   $RB, 2
+ 5762:             MUL     $GP6, $GP6, $RB
+ 5766:             MUL     $GP5, $GP5, $GP6
+ 5770:             LOADI   $RA, 0
+ 5776:             LOADI   $RB, 3
+ 5782:             ADD     $GP6, $RA, $RB
+ 5786:             LOADI   $RA, 0
+ 5792:             ADD     $GP6, $RA, $GP6
+ 5796:             LOADI   $RA, 0
+ 5802:             ADD     $GP6, $RA, $GP6
+ 5806:             LOADI   $RA, 0
+ 5812:             ADD     $GP6, $RA, $GP6
+ 5816:             LOADI   $RA, 1
+ 5822:             ADD     $GP6, $RA, $GP6
+ 5826:             LOADI   $RA, 1
+ 5832:             ADD     $GP6, $RA, $GP6
+ 5836:             LOADI   $RA, 5
+ 5842:             SUB     $GP6, $RA, $GP6
+ 5846:             LOADI   $RA, 1
+ 5852:             ADD     $GP6, $RA, $GP6
+ 5856:             LOADI   $RA, 0
+ 5862:             ADD     $GP6, $RA, $GP6
+ 5866:             LOADI   $RA, 1
+ 5872:             ADD     $GP6, $RA, $GP6
+ 5876:             LOADI   $RA, 1
+ 5882:             ADD     $GP6, $RA, $GP6
+ 5886:             LOADI   $RA, 1
+ 5892:             ADD     $GP6, $RA, $GP6
+ 5896:             LOADI   $RA, 1
+ 5902:             ADD     $GP6, $RA, $GP6
+ 5906:             LOADI   $RA, 5
+ 5912:             SUB     $GP6, $RA, $GP6
+ 5916:             LOADI   $RA, 1
+ 5922:             ADD     $GP6, $RA, $GP6
+ 5926:             LOADI   $RA, 1
+ 5932:             ADD     $GP6, $RA, $GP6
+ 5936:             LOADI   $RA, 1
+ 5942:             ADD     $GP6, $RA, $GP6
+ 5946:             LOADI   $RB, 2
+ 5952:             MUL     $GP6, $GP6, $RB
+ 5956:             LOADI   $RA, 0
+ 5962:             LOADI   $RB, 3
+ 5968:             ADD     $GP7, $RA, $RB
+ 5972:             LOADI   $RA, 0
+ 5978:             ADD     $GP7, $RA, $GP7
+ 5982:             LOADI   $RA, 0
+ 5988:             ADD     $GP7, $RA, $GP7
+ 5992:             LOADI   $RA, 0
+ 5998:             ADD     $GP7, $RA, $GP7
+ 6002:             LOADI   $RA, 1
+ 6008:             ADD     $GP7, $RA, $GP7
+ 6012:             LOADI   $RA, 1
+ 6018:             ADD     $GP7, $RA, $GP7
+ 6022:             LOADI   $RA, 5
+ 6028:             SUB     $GP7, $RA, $GP7
+ 6032:             LOADI   $RA, 1
+ 6038:             ADD     $GP7, $RA, $GP7
+ 6042:             LOADI   $RA, 0
+ 6048:             ADD     $GP7, $RA, $GP7
+ 6052:             LOADI   $RA, 1
+ 6058:             ADD     $GP7, $RA, $GP7
+ 6062:             LOADI   $RA, 1
+ 6068:             ADD     $GP7, $RA, $GP7
+ 6072:             LOADI   $RA, 1
+ 6078:             ADD     $GP7, $RA, $GP7
+ 6082:             LOADI   $RA, 1
+ 6088:             ADD     $GP7, $RA, $GP7
+ 6092:             LOADI   $RA, 5
+ 6098:             SUB     $GP7, $RA, $GP7
+ 6102:             LOADI   $RA, 1
+ 6108:             ADD     $GP7, $RA, $GP7
+ 6112:             LOADI   $RA, 1
+ 6118:             ADD     $GP7, $RA, $GP7
+ 6122:             LOADI   $RA, 1
+ 6128:             ADD     $GP7, $RA, $GP7
+ 6132:             LOADI   $RB, 2
+ 6138:             MUL     $GP7, $GP7, $RB
+ 6142:             MUL     $GP6, $GP6, $GP7
+ 6146:             ADD     $GP5, $GP5, $GP6
+ 6150:             MUL     $GP4, $GP4, $GP5
+ 6154:             ADD     $GP3, $GP3, $GP4
+ 6158:             MUL     $GP2, $GP2, $GP3
+ 6162:             LOADI   $RA, 0
+ 6168:             LOADI   $RB, 3
+ 6174:             ADD     $GP3, $RA, $RB
+ 6178:             LOADI   $RA, 0
+ 6184:             ADD     $GP3, $RA, $GP3
+ 6188:             LOADI   $RA, 0
+ 6194:             ADD     $GP3, $RA, $GP3
+ 6198:             LOADI   $RA, 0
+ 6204:             ADD     $GP3, $RA, $GP3
+ 6208:             LOADI   $RA, 1
+ 6214:             ADD     $GP3, $RA, $GP3
+ 6218:             LOADI   $RA, 1
+ 6224:             ADD     $GP3, $RA, $GP3
+ 6228:             LOADI   $RA, 5
+ 6234:             SUB     $GP3, $RA, $GP3
+ 6238:             LOADI   $RA, 1
+ 6244:             ADD     $GP3, $RA, $GP3
+ 6248:             LOADI   $RA, 0
+ 6254:             ADD     $GP3, $RA, $GP3
+ 6258:             LOADI   $RA, 1
+ 6264:             ADD     $GP3, $RA, $GP3
+ 6268:             LOADI   $RA, 1
+ 6274:             ADD     $GP3, $RA, $GP3
+ 6278:             LOADI   $RA, 1
+ 6284:             ADD     $GP3, $RA, $GP3
+ 6288:             LOADI   $RA, 1
+ 6294:             ADD     $GP3, $RA, $GP3
+ 6298:             LOADI   $RA, 5
+ 6304:             SUB     $GP3, $RA, $GP3
+ 6308:             LOADI   $RA, 1
+ 6314:             ADD     $GP3, $RA, $GP3
+ 6318:             LOADI   $RA, 1
+ 6324:             ADD     $GP3, $RA, $GP3
+ 6328:             LOADI   $RA, 1
+ 6334:             ADD     $GP3, $RA, $GP3
+ 6338:             LOADI   $RB, 2
+ 6344:             MUL     $GP3, $GP3, $RB
+ 6348:             LOADI   $RA, 0
+ 6354:             LOADI   $RB, 3
+ 6360:             ADD     $GP4, $RA, $RB
+ 6364:             LOADI   $RA, 0
+ 6370:             ADD     $GP4, $RA, $GP4
+ 6374:             LOADI   $RA, 0
+ 6380:             ADD     $GP4, $RA, $GP4
+ 6384:             LOADI   $RA, 0
+ 6390:             ADD     $GP4, $RA, $GP4
+ 6394:             LOADI   $RA, 1
+ 6400:             ADD     $GP4, $RA, $GP4
+ 6404:             LOADI   $RA, 1
+ 6410:             ADD     $GP4, $RA, $GP4
+ 6414:             LOADI   $RA, 5
+ 6420:             SUB     $GP4, $RA, $GP4
+ 6424:             LOADI   $RA, 1
+ 6430:             ADD     $GP4, $RA, $GP4
+ 6434:             LOADI   $RA, 0
+ 6440:             ADD     $GP4, $RA, $GP4
+ 6444:             LOADI   $RA, 1
+ 6450:             ADD     $GP4, $RA, $GP4
+ 6454:             LOADI   $RA, 1
+ 6460:             ADD     $GP4, $RA, $GP4
+ 6464:             LOADI   $RA, 1
+ 6470:             ADD     $GP4, $RA, $GP4
+ 6474:             LOADI   $RA, 1
+ 6480:             ADD     $GP4, $RA, $GP4
+ 6484:             LOADI   $RA, 5
+ 6490:             SUB     $GP4, $RA, $GP4
+ 6494:             LOADI   $RA, 1
+ 6500:             ADD     $GP4, $RA, $GP4
+ 6504:             LOADI   $RA, 1
+ 6510:             ADD     $GP4, $RA, $GP4
+ 6514:             LOADI   $RA, 1
+ 6520:             ADD     $GP4, $RA, $GP4
+ 6524:             LOADI   $RB, 2
+ 6530:             MUL     $GP4, $GP4, $RB
+ 6534:             MUL     $GP3, $GP3, $GP4
+ 6538:             LOADI   $RA, 0
+ 6544:             LOADI   $RB, 3
+ 6550:             ADD     $GP4, $RA, $RB
+ 6554:             LOADI   $RA, 0
+ 6560:             ADD     $GP4, $RA, $GP4
+ 6564:             LOADI   $RA, 0
+ 6570:             ADD     $GP4, $RA, $GP4
+ 6574:             LOADI   $RA, 0
+ 6580:             ADD     $GP4, $RA, $GP4
+ 6584:             LOADI   $RA, 1
+ 6590:             ADD     $GP4, $RA, $GP4
+ 6594:             LOADI   $RA, 1
+ 6600:             ADD     $GP4, $RA, $GP4
+ 6604:             LOADI   $RA, 5
+ 6610:             SUB     $GP4, $RA, $GP4
+ 6614:             LOADI   $RA, 1
+ 6620:             ADD     $GP4, $RA, $GP4
+ 6624:             LOADI   $RA, 0
+ 6630:             ADD     $GP4, $RA, $GP4
+ 6634:             LOADI   $RA, 1
+ 6640:             ADD     $GP4, $RA, $GP4
+ 6644:             LOADI   $RA, 1
+ 6650:             ADD     $GP4, $RA, $GP4
+ 6654:             LOADI   $RA, 1
+ 6660:             ADD     $GP4, $RA, $GP4
+ 6664:             LOADI   $RA, 1
+ 6670:             ADD     $GP4, $RA, $GP4
+ 6674:             LOADI   $RA, 5
+ 6680:             SUB     $GP4, $RA, $GP4
+ 6684:             LOADI   $RA, 1
+ 6690:             ADD     $GP4, $RA, $GP4
+ 6694:             LOADI   $RA, 1
+ 6700:             ADD     $GP4, $RA, $GP4
+ 6704:             LOADI   $RA, 1
+ 6710:             ADD     $GP4, $RA, $GP4
+ 6714:             LOADI   $RB, 2
+ 6720:             MUL     $GP4, $GP4, $RB
+ 6724:             LOADI   $RA, 0
+ 6730:             LOADI   $RB, 3
+ 6736:             ADD     $GP5, $RA, $RB
+ 6740:             LOADI   $RA, 0
+ 6746:             ADD     $GP5, $RA, $GP5
+ 6750:             LOADI   $RA, 0
+ 6756:             ADD     $GP5, $RA, $GP5
+ 6760:             LOADI   $RA, 0
+ 6766:             ADD     $GP5, $RA, $GP5
+ 6770:             LOADI   $RA, 1
+ 6776:             ADD     $GP5, $RA, $GP5
+ 6780:             LOADI   $RA, 1
+ 6786:             ADD     $GP5, $RA, $GP5
+ 6790:             LOADI   $RA, 5
+ 6796:             SUB     $GP5, $RA, $GP5
+ 6800:             LOADI   $RA, 1
+ 6806:             ADD     $GP5, $RA, $GP5
+ 6810:             LOADI   $RA, 0
+ 6816:             ADD     $GP5, $RA, $GP5
+ 6820:             LOADI   $RA, 1
+ 6826:             ADD     $GP5, $RA, $GP5
+ 6830:             LOADI   $RA, 1
+ 6836:             ADD     $GP5, $RA, $GP5
+ 6840:             LOADI   $RA, 1
+ 6846:             ADD     $GP5, $RA, $GP5
+ 6850:             LOADI   $RA, 1
+ 6856:             ADD     $GP5, $RA, $GP5
+ 6860:             LOADI   $RA, 5
+ 6866:             SUB     $GP5, $RA, $GP5
+ 6870:             LOADI   $RA, 1
+ 6876:             ADD     $GP5, $RA, $GP5
+ 6880:             LOADI   $RA, 1
+ 6886:             ADD     $GP5, $RA, $GP5
+ 6890:             LOADI   $RA, 1
+ 6896:             ADD     $GP5, $RA, $GP5
+ 6900:             LOADI   $RB, 2
+ 6906:             MUL     $GP5, $GP5, $RB
+ 6910:             MUL     $GP4, $GP4, $GP5
+ 6914:             ADD     $GP3, $GP3, $GP4
+ 6918:             LOADI   $RA, 0
+ 6924:             LOADI   $RB, 3
+ 6930:             ADD     $GP4, $RA, $RB
+ 6934:             LOADI   $RA, 0
+ 6940:             ADD     $GP4, $RA, $GP4
+ 6944:             LOADI   $RA, 0
+ 6950:             ADD     $GP4, $RA, $GP4
+ 6954:             LOADI   $RA, 0
+ 6960:             ADD     $GP4, $RA, $GP4
+ 6964:             LOADI   $RA, 1
+ 6970:             ADD     $GP4, $RA, $GP4
+ 6974:             LOADI   $RA, 1
+ 6980:             ADD     $GP4, $RA, $GP4
+ 6984:             LOADI   $RA, 5
+ 6990:             SUB     $GP4, $RA, $GP4
+ 6994:             LOADI   $RA, 1
+ 7000:             ADD     $GP4, $RA, $GP4
+ 7004:             LOADI   $RA, 0
+ 7010:             ADD     $GP4, $RA, $GP4
+ 7014:             LOADI   $RA, 1
+ 7020:             ADD     $GP4, $RA, $GP4
+ 7024:             LOADI   $RA, 1
+ 7030:             ADD     $GP4, $RA, $GP4
+ 7034:             LOADI   $RA, 1
+ 7040:             ADD     $GP4, $RA, $GP4
+ 7044:             LOADI   $RA, 1
+ 7050:             ADD     $GP4, $RA, $GP4
+ 7054:             LOADI   $RA, 5
+ 7060:             SUB     $GP4, $RA, $GP4
+ 7064:             LOADI   $RA, 1
+ 7070:             ADD     $GP4, $RA, $GP4
+ 7074:             LOADI   $RA, 1
+ 7080:             ADD     $GP4, $RA, $GP4
+ 7084:             LOADI   $RA, 1
+ 7090:             ADD     $GP4, $RA, $GP4
+ 7094:             LOADI   $RB, 2
+ 7100:             MUL     $GP4, $GP4, $RB
+ 7104:             LOADI   $RA, 0
+ 7110:             LOADI   $RB, 3
+ 7116:             ADD     $GP5, $RA, $RB
+ 7120:             LOADI   $RA, 0
+ 7126:             ADD     $GP5, $RA, $GP5
+ 7130:             LOADI   $RA, 0
+ 7136:             ADD     $GP5, $RA, $GP5
+ 7140:             LOADI   $RA, 0
+ 7146:             ADD     $GP5, $RA, $GP5
+ 7150:             LOADI   $RA, 1
+ 7156:             ADD     $GP5, $RA, $GP5
+ 7160:             LOADI   $RA, 1
+ 7166:             ADD     $GP5, $RA, $GP5
+ 7170:             LOADI   $RA, 5
+ 7176:             SUB     $GP5, $RA, $GP5
+ 7180:             LOADI   $RA, 1
+ 7186:             ADD     $GP5, $RA, $GP5
+ 7190:             LOADI   $RA, 0
+ 7196:             ADD     $GP5, $RA, $GP5
+ 7200:             LOADI   $RA, 1
+ 7206:             ADD     $GP5, $RA, $GP5
+ 7210:             LOADI   $RA, 1
+ 7216:             ADD     $GP5, $RA, $GP5
+ 7220:             LOADI   $RA, 1
+ 7226:             ADD     $GP5, $RA, $GP5
+ 7230:             LOADI   $RA, 1
+ 7236:             ADD     $GP5, $RA, $GP5
+ 7240:             LOADI   $RA, 5
+ 7246:             SUB     $GP5, $RA, $GP5
+ 7250:             LOADI   $RA, 1
+ 7256:             ADD     $GP5, $RA, $GP5
+ 7260:             LOADI   $RA, 1
+ 7266:             ADD     $GP5, $RA, $GP5
+ 7270:             LOADI   $RA, 1
+ 7276:             ADD     $GP5, $RA, $GP5
+ 7280:             LOADI   $RB, 2
+ 7286:             MUL     $GP5, $GP5, $RB
+ 7290:             MUL     $GP4, $GP4, $GP5
+ 7294:             LOADI   $RA, 0
+ 7300:             LOADI   $RB, 3
+ 7306:             ADD     $GP5, $RA, $RB
+ 7310:             LOADI   $RA, 0
+ 7316:             ADD     $GP5, $RA, $GP5
+ 7320:             LOADI   $RA, 0
+ 7326:             ADD     $GP5, $RA, $GP5
+ 7330:             LOADI   $RA, 0
+ 7336:             ADD     $GP5, $RA, $GP5
+ 7340:             LOADI   $RA, 1
+ 7346:             ADD     $GP5, $RA, $GP5
+ 7350:             LOADI   $RA, 1
+ 7356:             ADD     $GP5, $RA, $GP5
+ 7360:             LOADI   $RA, 5
+ 7366:             SUB     $GP5, $RA, $GP5
+ 7370:             LOADI   $RA, 1
+ 7376:             ADD     $GP5, $RA, $GP5
+ 7380:             LOADI   $RA, 0
+ 7386:             ADD     $GP5, $RA, $GP5
+ 7390:             LOADI   $RA, 1
+ 7396:             ADD     $GP5, $RA, $GP5
+ 7400:             LOADI   $RA, 1
+ 7406:             ADD     $GP5, $RA, $GP5
+ 7410:             LOADI   $RA, 1
+ 7416:             ADD     $GP5, $RA, $GP5
+ 7420:             LOADI   $RA, 1
+ 7426:             ADD     $GP5, $RA, $GP5
+ 7430:             LOADI   $RA, 5
+ 7436:             SUB     $GP5, $RA, $GP5
+ 7440:             LOADI   $RA, 1
+ 7446:             ADD     $GP5, $RA, $GP5
+ 7450:             LOADI   $RA, 1
+ 7456:             ADD     $GP5, $RA, $GP5
+ 7460:             LOADI   $RA, 1
+ 7466:             ADD     $GP5, $RA, $GP5
+ 7470:             LOADI   $RB, 2
+ 7476:             MUL     $GP5, $GP5, $RB
+ 7480:             LOADI   $RA, 0
+ 7486:             LOADI   $RB, 3
+ 7492:             ADD     $GP6, $RA, $RB
+ 7496:             LOADI   $RA, 0
+ 7502:             ADD     $GP6, $RA, $GP6
+ 7506:             LOADI   $RA, 0
+ 7512:             ADD     $GP6, $RA, $GP6
+ 7516:             LOADI   $RA, 0
+ 7522:             ADD     $GP6, $RA, $GP6
+ 7526:             LOADI   $RA, 1
+ 7532:             ADD     $GP6, $RA, $GP6
+ 7536:             LOADI   $RA, 1
+ 7542:             ADD     $GP6, $RA, $GP6
+ 7546:             LOADI   $RA, 5
+ 7552:             SUB     $GP6, $RA, $GP6
+ 7556:             LOADI   $RA, 1
+ 7562:             ADD     $GP6, $RA, $GP6
+ 7566:             LOADI   $RA, 0
+ 7572:             ADD     $GP6, $RA, $GP6
+ 7576:             LOADI   $RA, 1
+ 7582:             ADD     $GP6, $RA, $GP6
+ 7586:             LOADI   $RA, 1
+ 7592:             ADD     $GP6, $RA, $GP6
+ 7596:             LOADI   $RA, 1
+ 7602:             ADD     $GP6, $RA, $GP6
+ 7606:             LOADI   $RA, 1
+ 7612:             ADD     $GP6, $RA, $GP6
+ 7616:             LOADI   $RA, 5
+ 7622:             SUB     $GP6, $RA, $GP6
+ 7626:             LOADI   $RA, 1
+ 7632:             ADD     $GP6, $RA, $GP6
+ 7636:             LOADI   $RA, 1
+ 7642:             ADD     $GP6, $RA, $GP6
+ 7646:             LOADI   $RA, 1
+ 7652:             ADD     $GP6, $RA, $GP6
+ 7656:             LOADI   $RB, 2
+ 7662:             MUL     $GP6, $GP6, $RB
+ 7666:             MUL     $GP5, $GP5, $GP6
+ 7670:             ADD     $GP4, $GP4, $GP5
+ 7674:             MUL     $GP3, $GP3, $GP4
+ 7678:             LOADI   $RA, 0
+ 7684:             LOADI   $RB, 3
+ 7690:             ADD     $GP4, $RA, $RB
+ 7694:             LOADI   $RA, 0
+ 7700:             ADD     $GP4, $RA, $GP4
+ 7704:             LOADI   $RA, 0
+ 7710:             ADD     $GP4, $RA, $GP4
+ 7714:             LOADI   $RA, 0
+ 7720:             ADD     $GP4, $RA, $GP4
+ 7724:             LOADI   $RA, 1
+ 7730:             ADD     $GP4, $RA, $GP4
+ 7734:             LOADI   $RA, 1
+ 7740:             ADD     $GP4, $RA, $GP4
+ 7744:             LOADI   $RA, 5
+ 7750:             SUB     $GP4, $RA, $GP4
+ 7754:             LOADI   $RA, 1
+ 7760:             ADD     $GP4, $RA, $GP4
+ 7764:             LOADI   $RA, 0
+ 7770:             ADD     $GP4, $RA, $GP4
+ 7774:             LOADI   $RA, 1
+ 7780:             ADD     $GP4, $RA, $GP4
+ 7784:             LOADI   $RA, 1
+ 7790:             ADD     $GP4, $RA, $GP4
+ 7794:             LOADI   $RA, 1
+ 7800:             ADD     $GP4, $RA, $GP4
+ 7804:             LOADI   $RA, 1
+ 7810:             ADD     $GP4, $RA, $GP4
+ 7814:             LOADI   $RA, 5
+ 7820:             SUB     $GP4, $RA, $GP4
+ 7824:             LOADI   $RA, 1
+ 7830:             ADD     $GP4, $RA, $GP4
+ 7834:             LOADI   $RA, 1
+ 7840:             ADD     $GP4, $RA, $GP4
+ 7844:             LOADI   $RA, 1
+ 7850:             ADD     $GP4, $RA, $GP4
+ 7854:             LOADI   $RB, 2
+ 7860:             MUL     $GP4, $GP4, $RB
+ 7864:             LOADI   $RA, 0
+ 7870:             LOADI   $RB, 3
+ 7876:             ADD     $GP5, $RA, $RB
+ 7880:             LOADI   $RA, 0
+ 7886:             ADD     $GP5, $RA, $GP5
+ 7890:             LOADI   $RA, 0
+ 7896:             ADD     $GP5, $RA, $GP5
+ 7900:             LOADI   $RA, 0
+ 7906:             ADD     $GP5, $RA, $GP5
+ 7910:             LOADI   $RA, 1
+ 7916:             ADD     $GP5, $RA, $GP5
+ 7920:             LOADI   $RA, 1
+ 7926:             ADD     $GP5, $RA, $GP5
+ 7930:             LOADI   $RA, 5
+ 7936:             SUB     $GP5, $RA, $GP5
+ 7940:             LOADI   $RA, 1
+ 7946:             ADD     $GP5, $RA, $GP5
+ 7950:             LOADI   $RA, 0
+ 7956:             ADD     $GP5, $RA, $GP5
+ 7960:             LOADI   $RA, 1
+ 7966:             ADD     $GP5, $RA, $GP5
+ 7970:             LOADI   $RA, 1
+ 7976:             ADD     $GP5, $RA, $GP5
+ 7980:             LOADI   $RA, 1
+ 7986:             ADD     $GP5, $RA, $GP5
+ 7990:             LOADI   $RA, 1
+ 7996:             ADD     $GP5, $RA, $GP5
+ 8000:             LOADI   $RA, 5
+ 8006:             SUB     $GP5, $RA, $GP5
+ 8010:             LOADI   $RA, 1
+ 8016:             ADD     $GP5, $RA, $GP5
+ 8020:             LOADI   $RA, 1
+ 8026:             ADD     $GP5, $RA, $GP5
+ 8030:             LOADI   $RA, 1
+ 8036:             ADD     $GP5, $RA, $GP5
+ 8040:             LOADI   $RB, 2
+ 8046:             MUL     $GP5, $GP5, $RB
+ 8050:             MUL     $GP4, $GP4, $GP5
+ 8054:             LOADI   $RA, 0
+ 8060:             LOADI   $RB, 3
+ 8066:             ADD     $GP5, $RA, $RB
+ 8070:             LOADI   $RA, 0
+ 8076:             ADD     $GP5, $RA, $GP5
+ 8080:             LOADI   $RA, 0
+ 8086:             ADD     $GP5, $RA, $GP5
+ 8090:             LOADI   $RA, 0
+ 8096:             ADD     $GP5, $RA, $GP5
+ 8100:             LOADI   $RA, 1
+ 8106:             ADD     $GP5, $RA, $GP5
+ 8110:             LOADI   $RA, 1
+ 8116:             ADD     $GP5, $RA, $GP5
+ 8120:             LOADI   $RA, 5
+ 8126:             SUB     $GP5, $RA, $GP5
+ 8130:             LOADI   $RA, 1
+ 8136:             ADD     $GP5, $RA, $GP5
+ 8140:             LOADI   $RA, 0
+ 8146:             ADD     $GP5, $RA, $GP5
+ 8150:             LOADI   $RA, 1
+ 8156:             ADD     $GP5, $RA, $GP5
+ 8160:             LOADI   $RA, 1
+ 8166:             ADD     $GP5, $RA, $GP5
+ 8170:             LOADI   $RA, 1
+ 8176:             ADD     $GP5, $RA, $GP5
+ 8180:             LOADI   $RA, 1
+ 8186:             ADD     $GP5, $RA, $GP5
+ 8190:             LOADI   $RA, 5
+ 8196:             SUB     $GP5, $RA, $GP5
+ 8200:             LOADI   $RA, 1
+ 8206:             ADD     $GP5, $RA, $GP5
+ 8210:             LOADI   $RA, 1
+ 8216:             ADD     $GP5, $RA, $GP5
+ 8220:             LOADI   $RA, 1
+ 8226:             ADD     $GP5, $RA, $GP5
+ 8230:             LOADI   $RB, 2
+ 8236:             MUL     $GP5, $GP5, $RB
+ 8240:             LOADI   $RA, 0
+ 8246:             LOADI   $RB, 3
+ 8252:             ADD     $GP6, $RA, $RB
+ 8256:             LOADI   $RA, 0
+ 8262:             ADD     $GP6, $RA, $GP6
+ 8266:             LOADI   $RA, 0
+ 8272:             ADD     $GP6, $RA, $GP6
+ 8276:             LOADI   $RA, 0
+ 8282:             ADD     $GP6, $RA, $GP6
+ 8286:             LOADI   $RA, 1
+ 8292:             ADD     $GP6, $RA, $GP6
+ 8296:             LOADI   $RA, 1
+ 8302:             ADD     $GP6, $RA, $GP6
+ 8306:             LOADI   $RA, 5
+ 8312:             SUB     $GP6, $RA, $GP6
+ 8316:             LOADI   $RA, 1
+ 8322:             ADD     $GP6, $RA, $GP6
+ 8326:             LOADI   $RA, 0
+ 8332:             ADD     $GP6, $RA, $GP6
+ 8336:             LOADI   $RA, 1
+ 8342:             ADD     $GP6, $RA, $GP6
+ 8346:             LOADI   $RA, 1
+ 8352:             ADD     $GP6, $RA, $GP6
+ 8356:             LOADI   $RA, 1
+ 8362:             ADD     $GP6, $RA, $GP6
+ 8366:             LOADI   $RA, 1
+ 8372:             ADD     $GP6, $RA, $GP6
+ 8376:             LOADI   $RA, 5
+ 8382:             SUB     $GP6, $RA, $GP6
+ 8386:             LOADI   $RA, 1
+ 8392:             ADD     $GP6, $RA, $GP6
+ 8396:             LOADI   $RA, 1
+ 8402:             ADD     $GP6, $RA, $GP6
+ 8406:             LOADI   $RA, 1
+ 8412:             ADD     $GP6, $RA, $GP6
+ 8416:             LOADI   $RB, 2
+ 8422:             MUL     $GP6, $GP6, $RB
+ 8426:             MUL     $GP5, $GP5, $GP6
+ 8430:             ADD     $GP4, $GP4, $GP5
+ 8434:             LOADI   $RA, 0
+ 8440:             LOADI   $RB, 3
+ 8446:             ADD     $GP5, $RA, $RB
+ 8450:             LOADI   $RA, 0
+ 8456:             ADD     $GP5, $RA, $GP5
+ 8460:             LOADI   $RA, 0
+ 8466:             ADD     $GP5, $RA, $GP5
+ 8470:             LOADI   $RA, 0
+ 8476:             ADD     $GP5, $RA, $GP5
+ 8480:             LOADI   $RA, 1
+ 8486:             ADD     $GP5, $RA, $GP5
+ 8490:             LOADI   $RA, 1
+ 8496:             ADD     $GP5, $RA, $GP5
+ 8500:             LOADI   $RA, 5
+ 8506:             SUB     $GP5, $RA, $GP5
+ 8510:             LOADI   $RA, 1
+ 8516:             ADD     $GP5, $RA, $GP5
+ 8520:             LOADI   $RA, 0
+ 8526:             ADD     $GP5, $RA, $GP5
+ 8530:             LOADI   $RA, 1
+ 8536:             ADD     $GP5, $RA, $GP5
+ 8540:             LOADI   $RA, 1
+ 8546:             ADD     $GP5, $RA, $GP5
+ 8550:             LOADI   $RA, 1
+ 8556:             ADD     $GP5, $RA, $GP5
+ 8560:             LOADI   $RA, 1
+ 8566:             ADD     $GP5, $RA, $GP5
+ 8570:             LOADI   $RA, 5
+ 8576:             SUB     $GP5, $RA, $GP5
+ 8580:             LOADI   $RA, 1
+ 8586:             ADD     $GP5, $RA, $GP5
+ 8590:             LOADI   $RA, 1
+ 8596:             ADD     $GP5, $RA, $GP5
+ 8600:             LOADI   $RA, 1
+ 8606:             ADD     $GP5, $RA, $GP5
+ 8610:             LOADI   $RB, 2
+ 8616:             MUL     $GP5, $GP5, $RB
+ 8620:             LOADI   $RA, 0
+ 8626:             LOADI   $RB, 3
+ 8632:             ADD     $GP6, $RA, $RB
+ 8636:             LOADI   $RA, 0
+ 8642:             ADD     $GP6, $RA, $GP6
+ 8646:             LOADI   $RA, 0
+ 8652:             ADD     $GP6, $RA, $GP6
+ 8656:             LOADI   $RA, 0
+ 8662:             ADD     $GP6, $RA, $GP6
+ 8666:             LOADI   $RA, 1
+ 8672:             ADD     $GP6, $RA, $GP6
+ 8676:             LOADI   $RA, 1
+ 8682:             ADD     $GP6, $RA, $GP6
+ 8686:             LOADI   $RA, 5
+ 8692:             SUB     $GP6, $RA, $GP6
+ 8696:             LOADI   $RA, 1
+ 8702:             ADD     $GP6, $RA, $GP6
+ 8706:             LOADI   $RA, 0
+ 8712:             ADD     $GP6, $RA, $GP6
+ 8716:             LOADI   $RA, 1
+ 8722:             ADD     $GP6, $RA, $GP6
+ 8726:             LOADI   $RA, 1
+ 8732:             ADD     $GP6, $RA, $GP6
+ 8736:             LOADI   $RA, 1
+ 8742:             ADD     $GP6, $RA, $GP6
+ 8746:             LOADI   $RA, 1
+ 8752:             ADD     $GP6, $RA, $GP6
+ 8756:             LOADI   $RA, 5
+ 8762:             SUB     $GP6, $RA, $GP6
+ 8766:             LOADI   $RA, 1
+ 8772:             ADD     $GP6, $RA, $GP6
+ 8776:             LOADI   $RA, 1
+ 8782:             ADD     $GP6, $RA, $GP6
+ 8786:             LOADI   $RA, 1
+ 8792:             ADD     $GP6, $RA, $GP6
+ 8796:             LOADI   $RB, 2
+ 8802:             MUL     $GP6, $GP6, $RB
+ 8806:             MUL     $GP5, $GP5, $GP6
+ 8810:             LOADI   $RA, 0
+ 8816:             LOADI   $RB, 3
+ 8822:             ADD     $GP6, $RA, $RB
+ 8826:             LOADI   $RA, 0
+ 8832:             ADD     $GP6, $RA, $GP6
+ 8836:             LOADI   $RA, 0
+ 8842:             ADD     $GP6, $RA, $GP6
+ 8846:             LOADI   $RA, 0
+ 8852:             ADD     $GP6, $RA, $GP6
+ 8856:             LOADI   $RA, 1
+ 8862:             ADD     $GP6, $RA, $GP6
+ 8866:             LOADI   $RA, 1
+ 8872:             ADD     $GP6, $RA, $GP6
+ 8876:             LOADI   $RA, 5
+ 8882:             SUB     $GP6, $RA, $GP6
+ 8886:             LOADI   $RA, 1
+ 8892:             ADD     $GP6, $RA, $GP6
+ 8896:             LOADI   $RA, 0
+ 8902:             ADD     $GP6, $RA, $GP6
+ 8906:             LOADI   $RA, 1
+ 8912:             ADD     $GP6, $RA, $GP6
+ 8916:             LOADI   $RA, 1
+ 8922:             ADD     $GP6, $RA, $GP6
+ 8926:             LOADI   $RA, 1
+ 8932:             ADD     $GP6, $RA, $GP6
+ 8936:             LOADI   $RA, 1
+ 8942:             ADD     $GP6, $RA, $GP6
+ 8946:             LOADI   $RA, 5
+ 8952:             SUB     $GP6, $RA, $GP6
+ 8956:             LOADI   $RA, 1
+ 8962:             ADD     $GP6, $RA, $GP6
+ 8966:             LOADI   $RA, 1
+ 8972:             ADD     $GP6, $RA, $GP6
+ 8976:             LOADI   $RA, 1
+ 8982:             ADD     $GP6, $RA, $GP6
+ 8986:             LOADI   $RB, 2
+ 8992:             MUL     $GP6, $GP6, $RB
+ 8996:             LOADI   $RA, 0
+ 9002:             LOADI   $RB, 3
+ 9008:             ADD     $GP7, $RA, $RB
+ 9012:             LOADI   $RA, 0
+ 9018:             ADD     $GP7, $RA, $GP7
+ 9022:             LOADI   $RA, 0
+ 9028:             ADD     $GP7, $RA, $GP7
+ 9032:             LOADI   $RA, 0
+ 9038:             ADD     $GP7, $RA, $GP7
+ 9042:             LOADI   $RA, 1
+ 9048:             ADD     $GP7, $RA, $GP7
+ 9052:             LOADI   $RA, 1
+ 9058:             ADD     $GP7, $RA, $GP7
+ 9062:             LOADI   $RA, 5
+ 9068:             SUB     $GP7, $RA, $GP7
+ 9072:             LOADI   $RA, 1
+ 9078:             ADD     $GP7, $RA, $GP7
+ 9082:             LOADI   $RA, 0
+ 9088:             ADD     $GP7, $RA, $GP7
+ 9092:             LOADI   $RA, 1
+ 9098:             ADD     $GP7, $RA, $GP7
+ 9102:             LOADI   $RA, 1
+ 9108:             ADD     $GP7, $RA, $GP7
+ 9112:             LOADI   $RA, 1
+ 9118:             ADD     $GP7, $RA, $GP7
+ 9122:             LOADI   $RA, 1
+ 9128:             ADD     $GP7, $RA, $GP7
+ 9132:             LOADI   $RA, 5
+ 9138:             SUB     $GP7, $RA, $GP7
+ 9142:             LOADI   $RA, 1
+ 9148:             ADD     $GP7, $RA, $GP7
+ 9152:             LOADI   $RA, 1
+ 9158:             ADD     $GP7, $RA, $GP7
+ 9162:             LOADI   $RA, 1
+ 9168:             ADD     $GP7, $RA, $GP7
+ 9172:             LOADI   $RB, 2
+ 9178:             MUL     $GP7, $GP7, $RB
+ 9182:             MUL     $GP6, $GP6, $GP7
+ 9186:             ADD     $GP5, $GP5, $GP6
+ 9190:             MUL     $GP4, $GP4, $GP5
+ 9194:             ADD     $GP3, $GP3, $GP4
+ 9198:             LOADI   $RA, 0
+ 9204:             LOADI   $RB, 3
+ 9210:             ADD     $GP4, $RA, $RB
+ 9214:             LOADI   $RA, 0
+ 9220:             ADD     $GP4, $RA, $GP4
+ 9224:             LOADI   $RA, 0
+ 9230:             ADD     $GP4, $RA, $GP4
+ 9234:             LOADI   $RA, 0
+ 9240:             ADD     $GP4, $RA, $GP4
+ 9244:             LOADI   $RA, 1
+ 9250:             ADD     $GP4, $RA, $GP4
+ 9254:             LOADI   $RA, 1
+ 9260:             ADD     $GP4, $RA, $GP4
+ 9264:             LOADI   $RA, 5
+ 9270:             SUB     $GP4, $RA, $GP4
+ 9274:             LOADI   $RA, 1
+ 9280:             ADD     $GP4, $RA, $GP4
+ 9284:             LOADI   $RA, 0
+ 9290:             ADD     $GP4, $RA, $GP4
+ 9294:             LOADI   $RA, 1
+ 9300:             ADD     $GP4, $RA, $GP4
+ 9304:             LOADI   $RA, 1
+ 9310:             ADD     $GP4, $RA, $GP4
+ 9314:             LOADI   $RA, 1
+ 9320:             ADD     $GP4, $RA, $GP4
+ 9324:             LOADI   $RA, 1
+ 9330:             ADD     $GP4, $RA, $GP4
+ 9334:             LOADI   $RA, 5
+ 9340:             SUB     $GP4, $RA, $GP4
+ 9344:             LOADI   $RA, 1
+ 9350:             ADD     $GP4, $RA, $GP4
+ 9354:             LOADI   $RA, 1
+ 9360:             ADD     $GP4, $RA, $GP4
+ 9364:             LOADI   $RA, 1
+ 9370:             ADD     $GP4, $RA, $GP4
+ 9374:             LOADI   $RB, 2
+ 9380:             MUL     $GP4, $GP4, $RB
+ 9384:             LOADI   $RA, 0
+ 9390:             LOADI   $RB, 3
+ 9396:             ADD     $GP5, $RA, $RB
+ 9400:             LOADI   $RA, 0
+ 9406:             ADD     $GP5, $RA, $GP5
+ 9410:             LOADI   $RA, 0
+ 9416:             ADD     $GP5, $RA, $GP5
+ 9420:             LOADI   $RA, 0
+ 9426:             ADD     $GP5, $RA, $GP5
+ 9430:             LOADI   $RA, 1
+ 9436:             ADD     $GP5, $RA, $GP5
+ 9440:             LOADI   $RA, 1
+ 9446:             ADD     $GP5, $RA, $GP5
+ 9450:             LOADI   $RA, 5
+ 9456:             SUB     $GP5, $RA, $GP5
+ 9460:             LOADI   $RA, 1
+ 9466:             ADD     $GP5, $RA, $GP5
+ 9470:             LOADI   $RA, 0
+ 9476:             ADD     $GP5, $RA, $GP5
+ 9480:             LOADI   $RA, 1
+ 9486:             ADD     $GP5, $RA, $GP5
+ 9490:             LOADI   $RA, 1
+ 9496:             ADD     $GP5, $RA, $GP5
+ 9500:             LOADI   $RA, 1
+ 9506:             ADD     $GP5, $RA, $GP5
+ 9510:             LOADI   $RA, 1
+ 9516:             ADD     $GP5, $RA, $GP5
+ 9520:             LOADI   $RA, 5
+ 9526:             SUB     $GP5, $RA, $GP5
+ 9530:             LOADI   $RA, 1
+ 9536:             ADD     $GP5, $RA, $GP5
+ 9540:             LOADI   $RA, 1
+ 9546:             ADD     $GP5, $RA, $GP5
+ 9550:             LOADI   $RA, 1
+ 9556:             ADD     $GP5, $RA, $GP5
+ 9560:             LOADI   $RB, 2
+ 9566:             MUL     $GP5, $GP5, $RB
+ 9570:             MUL     $GP4, $GP4, $GP5
+ 9574:             LOADI   $RA, 0
+ 9580:             LOADI   $RB, 3
+ 9586:             ADD     $GP5, $RA, $RB
+ 9590:             LOADI   $RA, 0
+ 9596:             ADD     $GP5, $RA, $GP5
+ 9600:             LOADI   $RA, 0
+ 9606:             ADD     $GP5, $RA, $GP5
+ 9610:             LOADI   $RA, 0
+ 9616:             ADD     $GP5, $RA, $GP5
+ 9620:             LOADI   $RA, 1
+ 9626:             ADD     $GP5, $RA, $GP5
+ 9630:             LOADI   $RA, 1
+ 9636:             ADD     $GP5, $RA, $GP5
+ 9640:             LOADI   $RA, 5
+ 9646:             SUB     $GP5, $RA, $GP5
+ 9650:             LOADI   $RA, 1
+ 9656:             ADD     $GP5, $RA, $GP5
+ 9660:             LOADI   $RA, 0
+ 9666:             ADD     $GP5, $RA, $GP5
+ 9670:             LOADI   $RA, 1
+ 9676:             ADD     $GP5, $RA, $GP5
+ 9680:             LOADI   $RA, 1
+ 9686:             ADD     $GP5, $RA, $GP5
+ 9690:             LOADI   $RA, 1
+ 9696:             ADD     $GP5, $RA, $GP5
+ 9700:             LOADI   $RA, 1
+ 9706:             ADD     $GP5, $RA, $GP5
+ 9710:             LOADI   $RA, 5
+ 9716:             SUB     $GP5, $RA, $GP5
+ 9720:             LOADI   $RA, 1
+ 9726:             ADD     $GP5, $RA, $GP5
+ 9730:             LOADI   $RA, 1
+ 9736:             ADD     $GP5, $RA, $GP5
+ 9740:             LOADI   $RA, 1
+ 9746:             ADD     $GP5, $RA, $GP5
+ 9750:             LOADI   $RB, 2
+ 9756:             MUL     $GP5, $GP5, $RB
+ 9760:             LOADI   $RA, 0
+ 9766:             LOADI   $RB, 3
+ 9772:             ADD     $GP6, $RA, $RB
+ 9776:             LOADI   $RA, 0
+ 9782:             ADD     $GP6, $RA, $GP6
+ 9786:             LOADI   $RA, 0
+ 9792:             ADD     $GP6, $RA, $GP6
+ 9796:             LOADI   $RA, 0
+ 9802:             ADD     $GP6, $RA, $GP6
+ 9806:             LOADI   $RA, 1
+ 9812:             ADD     $GP6, $RA, $GP6
+ 9816:             LOADI   $RA, 1
+ 9822:             ADD     $GP6, $RA, $GP6
+ 9826:             LOADI   $RA, 5
+ 9832:             SUB     $GP6, $RA, $GP6
+ 9836:             LOADI   $RA, 1
+ 9842:             ADD     $GP6, $RA, $GP6
+ 9846:             LOADI   $RA, 0
+ 9852:             ADD     $GP6, $RA, $GP6
+ 9856:             LOADI   $RA, 1
+ 9862:             ADD     $GP6, $RA, $GP6
+ 9866:             LOADI   $RA, 1
+ 9872:             ADD     $GP6, $RA, $GP6
+ 9876:             LOADI   $RA, 1
+ 9882:             ADD     $GP6, $RA, $GP6
+ 9886:             LOADI   $RA, 1
+ 9892:             ADD     $GP6, $RA, $GP6
+ 9896:             LOADI   $RA, 5
+ 9902:             SUB     $GP6, $RA, $GP6
+ 9906:             LOADI   $RA, 1
+ 9912:             ADD     $GP6, $RA, $GP6
+ 9916:             LOADI   $RA, 1
+ 9922:             ADD     $GP6, $RA, $GP6
+ 9926:             LOADI   $RA, 1
+ 9932:             ADD     $GP6, $RA, $GP6
+ 9936:             LOADI   $RB, 2
+ 9942:             MUL     $GP6, $GP6, $RB
+ 9946:             MUL     $GP5, $GP5, $GP6
+ 9950:             ADD     $GP4, $GP4, $GP5
+ 9954:             LOADI   $RA, 0
+ 9960:             LOADI   $RB, 3
+ 9966:             ADD     $GP5, $RA, $RB
+ 9970:             LOADI   $RA, 0
+ 9976:             ADD     $GP5, $RA, $GP5
+ 9980:             LOADI   $RA, 0
+ 9986:             ADD     $GP5, $RA, $GP5
+ 9990:             LOADI   $RA, 0
+ 9996:             ADD     $GP5, $RA, $GP5
+10000:             LOADI   $RA, 1
+10006:             ADD     $GP5, $RA, $GP5
+10010:             LOADI   $RA, 1
+10016:             ADD     $GP5, $RA, $GP5
+10020:             LOADI   $RA, 5
+10026:             SUB     $GP5, $RA, $GP5
+10030:             LOADI   $RA, 1
+10036:             ADD     $GP5, $RA, $GP5
+10040:             LOADI   $RA, 0
+10046:             ADD     $GP5, $RA, $GP5
+10050:             LOADI   $RA, 1
+10056:             ADD     $GP5, $RA, $GP5
+10060:             LOADI   $RA, 1
+10066:             ADD     $GP5, $RA, $GP5
+10070:             LOADI   $RA, 1
+10076:             ADD     $GP5, $RA, $GP5
+10080:             LOADI   $RA, 1
+10086:             ADD     $GP5, $RA, $GP5
+10090:             LOADI   $RA, 5
+10096:             SUB     $GP5, $RA, $GP5
+10100:             LOADI   $RA, 1
+10106:             ADD     $GP5, $RA, $GP5
+10110:             LOADI   $RA, 1
+10116:             ADD     $GP5, $RA, $GP5
+10120:             LOADI   $RA, 1
+10126:             ADD     $GP5, $RA, $GP5
+10130:             LOADI   $RB, 2
+10136:             MUL     $GP5, $GP5, $RB
+10140:             LOADI   $RA, 0
+10146:             LOADI   $RB, 3
+10152:             ADD     $GP6, $RA, $RB
+10156:             LOADI   $RA, 0
+10162:             ADD     $GP6, $RA, $GP6
+10166:             LOADI   $RA, 0
+10172:             ADD     $GP6, $RA, $GP6
+10176:             LOADI   $RA, 0
+10182:             ADD     $GP6, $RA, $GP6
+10186:             LOADI   $RA, 1
+10192:             ADD     $GP6, $RA, $GP6
+10196:             LOADI   $RA, 1
+10202:             ADD     $GP6, $RA, $GP6
+10206:             LOADI   $RA, 5
+10212:             SUB     $GP6, $RA, $GP6
+10216:             LOADI   $RA, 1
+10222:             ADD     $GP6, $RA, $GP6
+10226:             LOADI   $RA, 0
+10232:             ADD     $GP6, $RA, $GP6
+10236:             LOADI   $RA, 1
+10242:             ADD     $GP6, $RA, $GP6
+10246:             LOADI   $RA, 1
+10252:             ADD     $GP6, $RA, $GP6
+10256:             LOADI   $RA, 1
+10262:             ADD     $GP6, $RA, $GP6
+10266:             LOADI   $RA, 1
+10272:             ADD     $GP6, $RA, $GP6
+10276:             LOADI   $RA, 5
+10282:             SUB     $GP6, $RA, $GP6
+10286:             LOADI   $RA, 1
+10292:             ADD     $GP6, $RA, $GP6
+10296:             LOADI   $RA, 1
+10302:             ADD     $GP6, $RA, $GP6
+10306:             LOADI   $RA, 1
+10312:             ADD     $GP6, $RA, $GP6
+10316:             LOADI   $RB, 2
+10322:             MUL     $GP6, $GP6, $RB
+10326:             MUL     $GP5, $GP5, $GP6
+10330:             LOADI   $RA, 0
+10336:             LOADI   $RB, 3
+10342:             ADD     $GP6, $RA, $RB
+10346:             LOADI   $RA, 0
+10352:             ADD     $GP6, $RA, $GP6
+10356:             LOADI   $RA, 0
+10362:             ADD     $GP6, $RA, $GP6
+10366:             LOADI   $RA, 0
+10372:             ADD     $GP6, $RA, $GP6
+10376:             LOADI   $RA, 1
+10382:             ADD     $GP6, $RA, $GP6
+10386:             LOADI   $RA, 1
+10392:             ADD     $GP6, $RA, $GP6
+10396:             LOADI   $RA, 5
+10402:             SUB     $GP6, $RA, $GP6
+10406:             LOADI   $RA, 1
+10412:             ADD     $GP6, $RA, $GP6
+10416:             LOADI   $RA, 0
+10422:             ADD     $GP6, $RA, $GP6
+10426:             LOADI   $RA, 1
+10432:             ADD     $GP6, $RA, $GP6
+10436:             LOADI   $RA, 1
+10442:             ADD     $GP6, $RA, $GP6
+10446:             LOADI   $RA, 1
+10452:             ADD     $GP6, $RA, $GP6
+10456:             LOADI   $RA, 1
+10462:             ADD     $GP6, $RA, $GP6
+10466:             LOADI   $RA, 5
+10472:             SUB     $GP6, $RA, $GP6
+10476:             LOADI   $RA, 1
+10482:             ADD     $GP6, $RA, $GP6
+10486:             LOADI   $RA, 1
+10492:             ADD     $GP6, $RA, $GP6
+10496:             LOADI   $RA, 1
+10502:             ADD     $GP6, $RA, $GP6
+10506:             LOADI   $RB, 2
+10512:             MUL     $GP6, $GP6, $RB
+10516:             LOADI   $RA, 0
+10522:             LOADI   $RB, 3
+10528:             ADD     $GP7, $RA, $RB
+10532:             LOADI   $RA, 0
+10538:             ADD     $GP7, $RA, $GP7
+10542:             LOADI   $RA, 0
+10548:             ADD     $GP7, $RA, $GP7
+10552:             LOADI   $RA, 0
+10558:             ADD     $GP7, $RA, $GP7
+10562:             LOADI   $RA, 1
+10568:             ADD     $GP7, $RA, $GP7
+10572:             LOADI   $RA, 1
+10578:             ADD     $GP7, $RA, $GP7
+10582:             LOADI   $RA, 5
+10588:             SUB     $GP7, $RA, $GP7
+10592:             LOADI   $RA, 1
+10598:             ADD     $GP7, $RA, $GP7
+10602:             LOADI   $RA, 0
+10608:             ADD     $GP7, $RA, $GP7
+10612:             LOADI   $RA, 1
+10618:             ADD     $GP7, $RA, $GP7
+10622:             LOADI   $RA, 1
+10628:             ADD     $GP7, $RA, $GP7
+10632:             LOADI   $RA, 1
+10638:             ADD     $GP7, $RA, $GP7
+10642:             LOADI   $RA, 1
+10648:             ADD     $GP7, $RA, $GP7
+10652:             LOADI   $RA, 5
+10658:             SUB     $GP7, $RA, $GP7
+10662:             LOADI   $RA, 1
+10668:             ADD     $GP7, $RA, $GP7
+10672:             LOADI   $RA, 1
+10678:             ADD     $GP7, $RA, $GP7
+10682:             LOADI   $RA, 1
+10688:             ADD     $GP7, $RA, $GP7
+10692:             LOADI   $RB, 2
+10698:             MUL     $GP7, $GP7, $RB
+10702:             MUL     $GP6, $GP6, $GP7
+10706:             ADD     $GP5, $GP5, $GP6
+10710:             MUL     $GP4, $GP4, $GP5
+10714:             LOADI   $RA, 0
+10720:             LOADI   $RB, 3
+10726:             ADD     $GP5, $RA, $RB
+10730:             LOADI   $RA, 0
+10736:             ADD     $GP5, $RA, $GP5
+10740:             LOADI   $RA, 0
+10746:             ADD     $GP5, $RA, $GP5
+10750:             LOADI   $RA, 0
+10756:             ADD     $GP5, $RA, $GP5
+10760:             LOADI   $RA, 1
+10766:             ADD     $GP5, $RA, $GP5
+10770:             LOADI   $RA, 1
+10776:             ADD     $GP5, $RA, $GP5
+10780:             LOADI   $RA, 5
+10786:             SUB     $GP5, $RA, $GP5
+10790:             LOADI   $RA, 1
+10796:             ADD     $GP5, $RA, $GP5
+10800:             LOADI   $RA, 0
+10806:             ADD     $GP5, $RA, $GP5
+10810:             LOADI   $RA, 1
+10816:             ADD     $GP5, $RA, $GP5
+10820:             LOADI   $RA, 1
+10826:             ADD     $GP5, $RA, $GP5
+10830:             LOADI   $RA, 1
+10836:             ADD     $GP5, $RA, $GP5
+10840:             LOADI   $RA, 1
+10846:             ADD     $GP5, $RA, $GP5
+10850:             LOADI   $RA, 5
+10856:             SUB     $GP5, $RA, $GP5
+10860:             LOADI   $RA, 1
+10866:             ADD     $GP5, $RA, $GP5
+10870:             LOADI   $RA, 1
+10876:             ADD     $GP5, $RA, $GP5
+10880:             LOADI   $RA, 1
+10886:             ADD     $GP5, $RA, $GP5
+10890:             LOADI   $RB, 2
+10896:             MUL     $GP5, $GP5, $RB
+10900:             LOADI   $RA, 0
+10906:             LOADI   $RB, 3
+10912:             ADD     $GP6, $RA, $RB
+10916:             LOADI   $RA, 0
+10922:             ADD     $GP6, $RA, $GP6
+10926:             LOADI   $RA, 0
+10932:             ADD     $GP6, $RA, $GP6
+10936:             LOADI   $RA, 0
+10942:             ADD     $GP6, $RA, $GP6
+10946:             LOADI   $RA, 1
+10952:             ADD     $GP6, $RA, $GP6
+10956:             LOADI   $RA, 1
+10962:             ADD     $GP6, $RA, $GP6
+10966:             LOADI   $RA, 5
+10972:             SUB     $GP6, $RA, $GP6
+10976:             LOADI   $RA, 1
+10982:             ADD     $GP6, $RA, $GP6
+10986:             LOADI   $RA, 0
+10992:             ADD     $GP6, $RA, $GP6
+10996:             LOADI   $RA, 1
+11002:             ADD     $GP6, $RA, $GP6
+11006:             LOADI   $RA, 1
+11012:             ADD     $GP6, $RA, $GP6
+11016:             LOADI   $RA, 1
+11022:             ADD     $GP6, $RA, $GP6
+11026:             LOADI   $RA, 1
+11032:             ADD     $GP6, $RA, $GP6
+11036:             LOADI   $RA, 5
+11042:             SUB     $GP6, $RA, $GP6
+11046:             LOADI   $RA, 1
+11052:             ADD     $GP6, $RA, $GP6
+11056:             LOADI   $RA, 1
+11062:             ADD     $GP6, $RA, $GP6
+11066:             LOADI   $RA, 1
+11072:             ADD     $GP6, $RA, $GP6
+11076:             LOADI   $RB, 2
+11082:             MUL     $GP6, $GP6, $RB
+11086:             MUL     $GP5, $GP5, $GP6
+11090:             LOADI   $RA, 0
+11096:             LOADI   $RB, 3
+11102:             ADD     $GP6, $RA, $RB
+11106:             LOADI   $RA, 0
+11112:             ADD     $GP6, $RA, $GP6
+11116:             LOADI   $RA, 0
+11122:             ADD     $GP6, $RA, $GP6
+11126:             LOADI   $RA, 0
+11132:             ADD     $GP6, $RA, $GP6
+11136:             LOADI   $RA, 1
+11142:             ADD     $GP6, $RA, $GP6
+11146:             LOADI   $RA, 1
+11152:             ADD     $GP6, $RA, $GP6
+11156:             LOADI   $RA, 5
+11162:             SUB     $GP6, $RA, $GP6
+11166:             LOADI   $RA, 1
+11172:             ADD     $GP6, $RA, $GP6
+11176:             LOADI   $RA, 0
+11182:             ADD     $GP6, $RA, $GP6
+11186:             LOADI   $RA, 1
+11192:             ADD     $GP6, $RA, $GP6
+11196:             LOADI   $RA, 1
+11202:             ADD     $GP6, $RA, $GP6
+11206:             LOADI   $RA, 1
+11212:             ADD     $GP6, $RA, $GP6
+11216:             LOADI   $RA, 1
+11222:             ADD     $GP6, $RA, $GP6
+11226:             LOADI   $RA, 5
+11232:             SUB     $GP6, $RA, $GP6
+11236:             LOADI   $RA, 1
+11242:             ADD     $GP6, $RA, $GP6
+11246:             LOADI   $RA, 1
+11252:             ADD     $GP6, $RA, $GP6
+11256:             LOADI   $RA, 1
+11262:             ADD     $GP6, $RA, $GP6
+11266:             LOADI   $RB, 2
+11272:             MUL     $GP6, $GP6, $RB
+11276:             LOADI   $RA, 0
+11282:             LOADI   $RB, 3
+11288:             ADD     $GP7, $RA, $RB
+11292:             LOADI   $RA, 0
+11298:             ADD     $GP7, $RA, $GP7
+11302:             LOADI   $RA, 0
+11308:             ADD     $GP7, $RA, $GP7
+11312:             LOADI   $RA, 0
+11318:             ADD     $GP7, $RA, $GP7
+11322:             LOADI   $RA, 1
+11328:             ADD     $GP7, $RA, $GP7
+11332:             LOADI   $RA, 1
+11338:             ADD     $GP7, $RA, $GP7
+11342:             LOADI   $RA, 5
+11348:             SUB     $GP7, $RA, $GP7
+11352:             LOADI   $RA, 1
+11358:             ADD     $GP7, $RA, $GP7
+11362:             LOADI   $RA, 0
+11368:             ADD     $GP7, $RA, $GP7
+11372:             LOADI   $RA, 1
+11378:             ADD     $GP7, $RA, $GP7
+11382:             LOADI   $RA, 1
+11388:             ADD     $GP7, $RA, $GP7
+11392:             LOADI   $RA, 1
+11398:             ADD     $GP7, $RA, $GP7
+11402:             LOADI   $RA, 1
+11408:             ADD     $GP7, $RA, $GP7
+11412:             LOADI   $RA, 5
+11418:             SUB     $GP7, $RA, $GP7
+11422:             LOADI   $RA, 1
+11428:             ADD     $GP7, $RA, $GP7
+11432:             LOADI   $RA, 1
+11438:             ADD     $GP7, $RA, $GP7
+11442:             LOADI   $RA, 1
+11448:             ADD     $GP7, $RA, $GP7
+11452:             LOADI   $RB, 2
+11458:             MUL     $GP7, $GP7, $RB
+11462:             MUL     $GP6, $GP6, $GP7
+11466:             ADD     $GP5, $GP5, $GP6
+11470:             LOADI   $RA, 0
+11476:             LOADI   $RB, 3
+11482:             ADD     $GP6, $RA, $RB
+11486:             LOADI   $RA, 0
+11492:             ADD     $GP6, $RA, $GP6
+11496:             LOADI   $RA, 0
+11502:             ADD     $GP6, $RA, $GP6
+11506:             LOADI   $RA, 0
+11512:             ADD     $GP6, $RA, $GP6
+11516:             LOADI   $RA, 1
+11522:             ADD     $GP6, $RA, $GP6
+11526:             LOADI   $RA, 1
+11532:             ADD     $GP6, $RA, $GP6
+11536:             LOADI   $RA, 5
+11542:             SUB     $GP6, $RA, $GP6
+11546:             LOADI   $RA, 1
+11552:             ADD     $GP6, $RA, $GP6
+11556:             LOADI   $RA, 0
+11562:             ADD     $GP6, $RA, $GP6
+11566:             LOADI   $RA, 1
+11572:             ADD     $GP6, $RA, $GP6
+11576:             LOADI   $RA, 1
+11582:             ADD     $GP6, $RA, $GP6
+11586:             LOADI   $RA, 1
+11592:             ADD     $GP6, $RA, $GP6
+11596:             LOADI   $RA, 1
+11602:             ADD     $GP6, $RA, $GP6
+11606:             LOADI   $RA, 5
+11612:             SUB     $GP6, $RA, $GP6
+11616:             LOADI   $RA, 1
+11622:             ADD     $GP6, $RA, $GP6
+11626:             LOADI   $RA, 1
+11632:             ADD     $GP6, $RA, $GP6
+11636:             LOADI   $RA, 1
+11642:             ADD     $GP6, $RA, $GP6
+11646:             LOADI   $RB, 2
+11652:             MUL     $GP6, $GP6, $RB
+11656:             LOADI   $RA, 0
+11662:             LOADI   $RB, 3
+11668:             ADD     $GP7, $RA, $RB
+11672:             LOADI   $RA, 0
+11678:             ADD     $GP7, $RA, $GP7
+11682:             LOADI   $RA, 0
+11688:             ADD     $GP7, $RA, $GP7
+11692:             LOADI   $RA, 0
+11698:             ADD     $GP7, $RA, $GP7
+11702:             LOADI   $RA, 1
+11708:             ADD     $GP7, $RA, $GP7
+11712:             LOADI   $RA, 1
+11718:             ADD     $GP7, $RA, $GP7
+11722:             LOADI   $RA, 5
+11728:             SUB     $GP7, $RA, $GP7
+11732:             LOADI   $RA, 1
+11738:             ADD     $GP7, $RA, $GP7
+11742:             LOADI   $RA, 0
+11748:             ADD     $GP7, $RA, $GP7
+11752:             LOADI   $RA, 1
+11758:             ADD     $GP7, $RA, $GP7
+11762:             LOADI   $RA, 1
+11768:             ADD     $GP7, $RA, $GP7
+11772:             LOADI   $RA, 1
+11778:             ADD     $GP7, $RA, $GP7
+11782:             LOADI   $RA, 1
+11788:             ADD     $GP7, $RA, $GP7
+11792:             LOADI   $RA, 5
+11798:             SUB     $GP7, $RA, $GP7
+11802:             LOADI   $RA, 1
+11808:             ADD     $GP7, $RA, $GP7
+11812:             LOADI   $RA, 1
+11818:             ADD     $GP7, $RA, $GP7
+11822:             LOADI   $RA, 1
+11828:             ADD     $GP7, $RA, $GP7
+11832:             LOADI   $RB, 2
+11838:             MUL     $GP7, $GP7, $RB
+11842:             MUL     $GP6, $GP6, $GP7
+11846:             LOADI   $RA, 0
+11852:             LOADI   $RB, 3
+11858:             ADD     $GP7, $RA, $RB
+11862:             LOADI   $RA, 0
+11868:             ADD     $GP7, $RA, $GP7
+11872:             LOADI   $RA, 0
+11878:             ADD     $GP7, $RA, $GP7
+11882:             LOADI   $RA, 0
+11888:             ADD     $GP7, $RA, $GP7
+11892:             LOADI   $RA, 1
+11898:             ADD     $GP7, $RA, $GP7
+11902:             LOADI   $RA, 1
+11908:             ADD     $GP7, $RA, $GP7
+11912:             LOADI   $RA, 5
+11918:             SUB     $GP7, $RA, $GP7
+11922:             LOADI   $RA, 1
+11928:             ADD     $GP7, $RA, $GP7
+11932:             LOADI   $RA, 0
+11938:             ADD     $GP7, $RA, $GP7
+11942:             LOADI   $RA, 1
+11948:             ADD     $GP7, $RA, $GP7
+11952:             LOADI   $RA, 1
+11958:             ADD     $GP7, $RA, $GP7
+11962:             LOADI   $RA, 1
+11968:             ADD     $GP7, $RA, $GP7
+11972:             LOADI   $RA, 1
+11978:             ADD     $GP7, $RA, $GP7
+11982:             LOADI   $RA, 5
+11988:             SUB     $GP7, $RA, $GP7
+11992:             LOADI   $RA, 1
+11998:             ADD     $GP7, $RA, $GP7
+12002:             LOADI   $RA, 1
+12008:             ADD     $GP7, $RA, $GP7
+12012:             LOADI   $RA, 1
+12018:             ADD     $GP7, $RA, $GP7
+12022:             LOADI   $RB, 2
+12028:             MUL     $GP7, $GP7, $RB
+12032:             LOADI   $RA, 0
+12038:             LOADI   $RB, 3
+12044:             ADD     $GP8, $RA, $RB
+12048:             LOADI   $RA, 0
+12054:             ADD     $GP8, $RA, $GP8
+12058:             LOADI   $RA, 0
+12064:             ADD     $GP8, $RA, $GP8
+12068:             LOADI   $RA, 0
+12074:             ADD     $GP8, $RA, $GP8
+12078:             LOADI   $RA, 1
+12084:             ADD     $GP8, $RA, $GP8
+12088:             LOADI   $RA, 1
+12094:             ADD     $GP8, $RA, $GP8
+12098:             LOADI   $RA, 5
+12104:             SUB     $GP8, $RA, $GP8
+12108:             LOADI   $RA, 1
+12114:             ADD     $GP8, $RA, $GP8
+12118:             LOADI   $RA, 0
+12124:             ADD     $GP8, $RA, $GP8
+12128:             LOADI   $RA, 1
+12134:             ADD     $GP8, $RA, $GP8
+12138:             LOADI   $RA, 1
+12144:             ADD     $GP8, $RA, $GP8
+12148:             LOADI   $RA, 1
+12154:             ADD     $GP8, $RA, $GP8
+12158:             LOADI   $RA, 1
+12164:             ADD     $GP8, $RA, $GP8
+12168:             LOADI   $RA, 5
+12174:             SUB     $GP8, $RA, $GP8
+12178:             LOADI   $RA, 1
+12184:             ADD     $GP8, $RA, $GP8
+12188:             LOADI   $RA, 1
+12194:             ADD     $GP8, $RA, $GP8
+12198:             LOADI   $RA, 1
+12204:             ADD     $GP8, $RA, $GP8
+12208:             LOADI   $RB, 2
+12214:             MUL     $GP8, $GP8, $RB
+12218:             MUL     $GP7, $GP7, $GP8
+12222:             ADD     $GP6, $GP6, $GP7
+12226:             MUL     $GP5, $GP5, $GP6
+12230:             ADD     $GP4, $GP4, $GP5
+12234:             MUL     $GP3, $GP3, $GP4
+12238:             ADD     $GP2, $GP2, $GP3
+12242:             LOADI   $RA, 1
+12248:             ADD     $GP2, $RA, $GP2
+12252:             STORE   $GP2, ($GP1)
+12255:             LOADI   $RB, -1
+12261:             ADD     $GP1, $FP, $RB
+12265:             MOVE    $RA, $GP1
+12268:             LOAD    $GP1, ($RA)
+12271:             DEC     $SP
+12273:             STORE   $GP1, ($SP)
+12276:             LOADI   $RA, _printint
+12282:             JMPAL   $RA
+12284:             LOADI   $RV, 0
+12290:     main@1: LOAD    $GP8, ($SP)
+12293:             INC     $SP
+12295:             LOAD    $GP7, ($SP)
+12298:             INC     $SP
+12300:             LOAD    $GP6, ($SP)
+12303:             INC     $SP
+12305:             LOAD    $GP5, ($SP)
+12308:             INC     $SP
+12310:             LOAD    $GP4, ($SP)
+12313:             INC     $SP
+12315:             LOAD    $GP3, ($SP)
+12318:             INC     $SP
+12320:             LOAD    $GP2, ($SP)
+12323:             INC     $SP
+12325:             LOAD    $GP1, ($SP)
+12328:             INC     $SP
+12330:             MOVE    $RA, $FP
+12333:             INC     $RA
+12335:             LOAD    $RET, ($RA)
+12338:             LOAD    $FP, ($FP)
+12341:             LOADI   $RA, 3
+12347:             ADD     $SP, $SP, $RA
+12351:             JMP     $RET
+12353:             LOADI   $RA, 0
+12359:             SYSCALL 0
+12361:  _printint: DEC     $SP
+12363:             STORE   $RET, ($SP)
+12366:             DEC     $SP
+12368:             STORE   $FP, ($SP)
+12371:             MOVE    $FP, $SP
+12374:             LOADI   $RA, 2
+12380:             ADD     $RA, $RA, $FP
+12384:             LOAD    $RA, ($RA)
+12387:             SYSCALL 5
+12389:             MOVE    $RA, $FP
+12392:             INC     $RA
+12394:             LOAD    $RET, ($RA)
+12397:             LOAD    $FP, ($FP)
+12400:             LOADI   $RA, 3
+12406:             ADD     $SP, $SP, $RA
+12410:             JMP     $RET
+12412:       _END: 

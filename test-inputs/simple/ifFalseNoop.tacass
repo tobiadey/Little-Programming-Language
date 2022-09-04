@@ -1,0 +1,28 @@
+.data
+
+.text
+    0:         LOADI   $RA, bar
+    6:         JMPAL   $RA
+    8:         JMPI    _END
+   13:    bar: DEC     $SP
+   15:         STORE   $RET, ($SP)
+   18:         DEC     $SP
+   20:         STORE   $FP, ($SP)
+   23:         MOVE    $FP, $SP
+   26:         LOADI   $RA, 0
+   32:         LOADI   $RB, 1
+   38:         EQ      $RA, $RA, $RB
+   42:         CJMPI   $RA, @3
+   48:     @2: JMPI    @4
+   53:     @3: 
+   53:     @4: LOADI   $RV, 0
+   59:  bar@1: MOVE    $RA, $FP
+   62:         INC     $RA
+   64:         LOAD    $RET, ($RA)
+   67:         LOAD    $FP, ($FP)
+   70:         LOADI   $RA, 2
+   76:         ADD     $SP, $SP, $RA
+   80:         JMP     $RET
+   82:         LOADI   $RA, 0
+   88:         SYSCALL 0
+   90:   _END: 
